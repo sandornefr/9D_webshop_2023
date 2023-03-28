@@ -1,6 +1,7 @@
 
 
 
+
 <html>
     <head>
         <style>
@@ -63,16 +64,16 @@ body{background-image:url(" Web háttér.png")}
         Regisztráció</div>
         <div style="text-align:center; font-size:large;" class="keret">
         <label for="Fname">Valódi név</label>
-        <input type="text" class="adatkeret">
+        <input type="text" class="adatkeret" required placeholder="A mező nem maradhat üresen">
         <br>
         <label for="lname">Felhasználónév</label>
-        <input type="text" class="adatkeret">
+        <input type="text" class="adatkeret" required placeholder="A mező nem maradhat üresen">
         <br>
         <label for="password">Jelszó</label>
-        <input type="password" class="adatkeret">
+        <input type="password" class="adatkeret" required placeholder="A mező nem maradhat üresen">
         <br>
         <label for="date">Születési dátum</label>
-        <input type="date" class="adatkeret" min="1900.01.01" max="2023.01.01">
+        <input type="date" class="adatkeret" min="1900.01.01" max="2023.01.01" required placeholder="A mező nem maradhat üresen">
         </div>
        
     <input type="submit" value="Regisztráció" style="text-align:center; font-size:200%;"class="button button1">
