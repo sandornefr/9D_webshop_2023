@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<style>
+    .gomb{background-color:black;
+    color:white;
+    padding:5px;}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elfelejtett jelszó</title>
+</head>
+<body>
+    <script>
+        function elfelejtett(){
+            document.getElementById('elfelejtett').innerHTML='Kérjük, nézze meg az e-mail címét, amellyet megadott!'
+        }
+        </script>
+    <h1 style="text-align:center; background-color:gray; color:gold; font-size:200%;">Kérjük küldje el e-mail címét!</h1>
+    <input type="email" required placeholder="Kérjük írja ide az e-mail címét!" minlength="1">
+<button type="button" class="gomb"
+onclick="document.getElementById('elfelejtett').innerHTML='Kérjük, nézze meg az e-mai címét, amellyet megadott'">Küldés</button>
+    <input type="submit" onclick="elfelejtett">
+<p id="elfelejtett"></p>
+<a href="Bejelentkezés.html">Vissza a bejelentkezéshez</a>
+</body>
+</html>
