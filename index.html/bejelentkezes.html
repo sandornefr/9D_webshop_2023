@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <style>
+            .keret {background-color: black;
+            color:yellow;
+        border: 2px ridge white;
+    margin:3px;
+padding:4px;}
+.adatkeret{background-color:chartreuse;
+color:black;
+border:25px yellow solid;
+padding: 32px,32px;
+margin:4px;}
+            .button{background-color:red;
+            color:green;
+        border: 20px outset gray;
+    padding:20px;
+margin:30px;
+transition-duration:0.4;
+cursor:pointer;}
+.button1{
+    background-color:red;
+    color:green;
+    border: 2px yellow inset;
+}
+.button1:hover{color:red;
+background-color:aqua;}
+.többioldal a{background-color: blanchedalmond;
+color:black;
+border:5px black solid;
+margin:5px;
+padding:5px;
+font-family:verdana;
+justify-content: right;}
+.többioldal a:hover{
+    background-color:black;
+    color:blanchedalmond;
+    transition-duration:0.5s;
+    cursor:pointer;
+}
+.többioldal{justify-content:left;
+            background-color:crimson;
+        color:cadetblue;
+    border:10px solid cadetblue;
+padding:10px;
+margin:10px;}
+body{background-image:url("kepek/webhatter.png");}
+.navbar{background-color:black;
+color:white;
+border:10px white solid;
+padding:5px;}
+.navbar button{background-color:black;
+color:white;
+border:5px white solid;
+padding:2px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;}
+.navbar button:hover{background-color:white;
+color:black;
+border:2px black solid;
+padding:1px;
+transition-duration:0.5s;
+cursor:pointer;
+transform:rotateX(180deg);
+transition-timing-function:ease-in-out;}
+        </style>
+    </head>
+    <body style="background-color: darksalmon;">
+        <ul class="navbar">
+            <a class="nav-link" href="fooldal.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Főoldal</button></a>
+            <a class="nav-link" href="regisztraciosfelulet.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Regisztráció</button></a>
+            <a class="nav-link" href="termekek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Termékek</button></a>
+            <a class="nav-link" href="informaciok.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Információk</button></a>
+            <a class="nav-link" href="osszestermek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Összes termék</button></a></ul>
+        <div class="többioldal">
+        <a href="fooldal.html" target="_blank">Főoldal</a>
+     <a href="regisztraciosfelulet.html" target="_blank">Regisztráció</a>
+     <a href="termekek.html" target="_blank">Termékek</a>
+     <a href="informaciok.html" target="_blank">Információk</a>
+     <a href="osszestermek.html" target="_blank">Összes termék</a>
+
+                    </div>
+                    <br>
+        <div style="text-align:center; font-size:large;" class="keret">
+            <h1 style="text-align:center; font-size:200%;">Bejelentkezés</h1>
+        <label for="fname">Felhasználónév</label>
+        <input type="text" class="adatkeret" required placeholder="A mező nem maradhat üresen">
+        <br>
+        <label for="password">Jelszó</label>
+        <input type="password" class="adatkeret" required placeholder="A mező nem maradhat üresen">
+        <br>
+        <button style="font-size:100%;" class="button button1">Bejelentkezés</button>
+        <a href="elfelejtettjelszo.html" target="_blank">Elfelejtett jelszó?</a>
+    </div>
+    </body>
+    </html>
