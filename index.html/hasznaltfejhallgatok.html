@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Használt fejhallgatók</title>
+    <style>
+        .használtermék{
+            background-color:black;
+            color:red;
+            border:15px red  solid;
+           
+       
+            padding:5px;
+            animation:villogás infinite 4s;
+        }
+        @keyframes villogás{
+            25%{color:blue; border:15px blue solid;}
+            50%{color:yellow; border:15px yellow solid;}
+            75%{color:green;border:15px green solid;}
+            100%{color:red; border:15px red solid;}
+        }
+        .részletek{overflow:auto;}
+        button{background-color:gray;
+        color:gold;
+    border:10px gold solid;
+padding:5px;
+width:200px;
+height:50px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease;
+justify-content:center;
+}
+
+button:hover{background-color:gold;
+color:gray;
+border:10px gray solid;
+padding:5px;
+width: 200px;
+height:50px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease;
+transform:rotateY(360deg);
+justify-content:center;}
+        </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="row gap-3">
+    <div class="card bg-primary mt-3 my-3 p-3" style="width:400px;">
+        <h1 style="background-color:white;color:red;font-size:200%;">Használt termék</h1>
+        <div class="card-header bg-success">
+          <div class="használtermék"><h1 class="card-title text-lg">Dyras mikrofonos Gamer fejhallgató</h1>
+            </div>
+        <div class="card-body "><img src="kepek/hasznaltfejhallgato1.jpg" width="250" height="250"></div>
+        
+    <div class="card-footer bg-danger">
+        <div class="részletek">
+            <h1 style="background-color:gray;color:gold;widh:4px;">Részletek</h1>
+            <ul style="list-style-type:circle">
+            <li> Állítható fejpánt</li>
+            <li>Mikrofon</li>
+            <li>2 méter hosszú kábel</li>
+            <li>Kompatibilis Windows OP rendszerrel</li>
+        </ul>
+       
+        </div>
+        <p>2990 Ft</p>
+        <button type="button" class="button button:hover;">Kosárba</button>
+    </div>
+        </div>
+ </div>
+
+ <div class="card bg-primary mt-3 my-3 p-3" style="width:400px;">
+    <h1 style="background-color:white;color:red;font-size:200%;">Használt termék</h1>
+    <div class="card-header bg-light">
+      <div class="használtermék"><h1 class="card-title text-lg">AKG K518 DJ fejhallgató fekete használt</h1>
+        </div>
+    <div class="card-body "><img src="kepek/hasznaltfejhallgato2.jpg" width="250" height="250"></div>
+    
+<div class="card-footer bg-primary">
+    <div class="részletek">
+        <h1 style="background-color:gray;color:gold;widh:4px;">Részletek</h1>
+        <ul style="list-style-type:circle">
+        <li> Hangnyomás:115 dB</li>
+        <li>tömeg:150 g</li>
+       
+    </ul>
+   
+    </div>
+    <p>6990 Ft</p>
+    <button type="button" class="button button:hover;">Kosárba</button>
+</div>
+    </div>
+</div>
+<div class="card bg-primary mt-3 my-3 p-3" style="width:400px;">
+    <h1 style="background-color:white;color:red;font-size:200%;">Használt termék</h1>
+    <div class="card-header bg-danger">
+      <div class="használtermék"><h1 class="card-title text-lg">Turtle Beach Call of Duty: MW3 vezeték nélküli fejhallgató </h1>
+        </div>
+    <div class="card-body "><img src="kepek/hasznaltfejhallgato3.jpg" width="250" height="250"></div>
+    
+<div class="card-footer bg-success">
+    <div class="részletek">
+        <h1 style="background-color:gray;color:gold;widh:4px;">Részletek</h1>
+        <ul style="list-style-type:circle">
+        <li> Transmitter</li>
+        <li>Transmitter USB kábel</li>
+    </ul>
+   
+    </div>
+    <p>13990 Ft</p>
+    <button type="button" class="button button:hover;">Kosárba</button>
+</div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

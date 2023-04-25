@@ -7,6 +7,7 @@
 
 
 
+
 <html>
     <head>
         <style>
@@ -92,21 +93,50 @@ transition-timing-function:ease-in-out;}
                     </div>
                     <br>
                     
+                    <script>
+                        document.getElementById("registration-form").addEventListener("submit", function(event) {
+ 
+  event.preventDefault();
+  
+  
+});
+
+var Valódinév=document.getElementById("Valódinév").value;
+var Felhasználnónév =document.getElementById("Felhasználnónév").value;
+var Jelszó=document.document.getElementById("Jelszó").value;
+var Születésidétum=document.getElementById("Születésidétum").value;
+if(Felhasználnónév.length<5){
+    alert("A Felhasználnóvének hosszabbnak kell lennie, mint 5 karakter");
+    return;
+}
+if(Valódinév.length<1){
+    alert("A névnek hosszabnak kell lennie, mint egy karakter");
+    return;
+}
+if(Jelszó.legth<8){
+    alert("A jelszónak hosszabnak kell lennie, mint 8 karakter");
+    return;
+}
+if(Születésidétum.length<6){
+    alert("Ez a dátum valószínüleg nem reális");
+    return;
+}
+                        </script>
         <div style="text-align:center; font: size 100%; background-color:crimson; color:navy; font-family:'Courier New' ;">
         Regisztráció</div>
         <div style="text-align:center; font-size:large;" class="keret">
             <form action="action/Adatok érkezése.html">
         <label for="Fname">Valódi név</label>
-    <input type="text" class="adatkeret" required placeholder="A mező nem maradhat üresen" minlength="1">
+    <input type="text" class="adatkeret" id="Valódinév" required placeholder="A mező nem maradhat üresen" minlength="1">
         <br>
         <label for="lname">Felhasználónév</label>
-      <input type="text" class="adatkeret" required placeholder="A mező nem maradhat üresen" minlength="1">
+      <input type="text" class="adatkeret" id="Felhasználónév" required placeholder="A mező nem maradhat üresen" minlength="1">
         <br>
         <label for="password">Jelszó</label>
-        <input type="password" class="adatkeret" minlength="8" required placeholder="A mező nem maradhat üresen(A jelszónak ,minimum 8 karakter hosszúnak kell lennie)">
+        <input type="password" class="adatkeret" id="Jelszó" minlength="8" required placeholder="A mező nem maradhat üresen(A jelszónak ,minimum 8 karakter hosszúnak kell lennie)">
         <br>
         <label for="datetime">Születési dátum</label>
-    <input type="date" class="adatkeret" min="1900.01.01" max="2023.01.01" required placeholder="A mező nem maradhat üresen">
+    <input type="date" class="adatkeret" id="Születésidátum" min="1900.01.01" max="2023.01.01" required placeholder="A mező nem maradhat üresen">
         </div>
        
     <input type="submit" value="Regisztráció" style="text-align:center; font-size:200%;"class="button button1">

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+header{background-color:gray;
+color:gold;
+width:75%;
+padding:50px;
+font-size:200%;
+text-align:center;
+justify-content:Center;}
+header h1{
+ animation:villogás 2s infinite;
+}
+article{
+    width:35%;
+    height:100%;
+    border:15px black solid;
+     
+}
+@keyframes villogás{
+    50%{background-color:gold;
+    color:gray;}
+    100%{background-color:gray;
+    color:gold;}
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Címecske</h1>
+        </header>
+        <article>
+            <div class="offcanvas offcanvas-start" id="offcanvas">
+                <div class="offcanvas-header">
+            <h1 class="offcanvas-title bg-dark text-lg text-light">hello</h1>
+            </div>
+            <div class="offcanvas-body">
+<button type="button" data-bs-toggle="dropdown">Nyomj rá</button>
+<ul class="dropdown-menu" id="dropdown">
+    <li class="dropdown-item">Helló</li>
+    <li class="dropdown-item">Belló</li>
+    <li class="Helló-Belló">Helló-Belló</li>
+</ul>
+            </div>
+            </div>
+            <button type="button" data-bs-target="#offcanvas">offcanvas</button>
+        </article>
+    </body>
+</html>

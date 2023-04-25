@@ -1,13 +1,23 @@
-
-
-
-
-
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <style>
+          .kilépésemelés{background-color:red;}
+          .kilépés{width:50px;
+          height:50px;
+        display:auto;
+      padding:5px;
+    border:10px black solid;
+  background-color:red;}
+          .vertical{overflow:auto;}
+          .vertical ul{background-color:cyan;
+          border:5px black solid;}
+        .vertical li{border-bottom:  1px black solid;
+        background-color:royalblue;
+      color:gold;}
+      .vertical li:hover{background-color:gold;
+    color:royalblue;}
           body{background-image:url("kepek/webhatter.png")}
             a:visited{
                 background-color:aqua;
@@ -75,6 +85,7 @@ transition-timing-function:ease-in-out;}
 .carousel{background-color:yellow;
 border:20px black solid;
 padding:10px;}
+.offcanvas{overflow:auto;}
             </style>
             </head>
 
@@ -97,7 +108,9 @@ padding:10px;}
  <div class="egy keretbe">
  
 <h1 style="background-color:gray; color:gold; text-align:center; font-size:200%;">Webáruház</h1>
-<p style="color:yellow; text-align:center; font-size:200%;">Felhozatalunk, röviden:</p>
+<div class="offcanvas" id="#offcanvas">
+
+</div>
 <div class="carousel">
 <div id="carosuel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -129,7 +142,37 @@ padding:10px;}
 </div>
 </div>
       </div>
-
+<div class="offcanvas offcanvas-start" id="offcanvasam">
+<div class="kilépésemelés"><div class="kilépés"><button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" style="float:right;"></button></div></div>
+  <div class="offcanvas-header bg-primary text-light text-lg">
+    <p style="background-color:royalblue;color:rosybrown; width:200px;">Nálunk kapható:</p>
+    <div class="vertical">
+    <ul class="list-group overflow:auto">
+   <li class="list-group-item">Új egér</li>
+   <br><li class="list-group-item">Új egérpad<li>
+   <br><li class="list-group-item">Új billentyűzet<li>
+   <br><li class="list-group-item">Új fejhallgató<li>
+   <br><li class="list-group-item">Új monitor<li>
+   <br><li class="list-group-item">Új számítógép</li>
+   <br><li class="list-group-item">Új alaplap</li>
+   <br><li class="list-group-item">Új gépház</li>
+   <br><li class="list-group-item">Új videókártya</li>
+   <br><li class="list-group-item">Új tápegység</li>
+   <br><li class="list-group-item">Új Hdd</li>
+   <br><li class="list-group-item">Új Ssd</li>
+   <br><li class="list-group-item">Használt egér</li>
+   <br><li class="list-group-item">Használt egérpad</li>
+   <br><li class="list-group-item">Használt billentyűzet</li>
+   <br><li class="list-group-item">Használt fejhallgató</li>
+   <br><li class="list-group-item">Használt monitor</li>
+   <br><li class="list-group-item">Használt gép</li>
+   <br><li class="list-group-item">Akciós termék</li>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<button type="button" class="bg-success text-light text-lg text-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasam">Bővebben</button>
  <div class="dropdown">
                   <button type="button" class="btn btn-dark text-success" data-bs-toggle="dropdown" >
                     Gyorsan a termékekre
@@ -143,6 +186,8 @@ padding:10px;}
                     <li><a class="dropdown-item bg-secondary text-lg text-light text-center border-inline"  href="hasznaltbillentyuzeteklistaja.html" target="_blank">Használt billentyűzetek </a> </li>
                     <li><a class="dropdown-item bg-success text-lg text-light text-center border-inline"  href="ujmonitoroklistaja.html" target="_blank">Új monitorok  </a></li>
                     <li><a class="dropdown-item bg-danger text-lg text-light text-center border-inline"  href="hasznaltmonitoroklistaja.html" target="_blank">Használt monitorok </a> </li>
+                    <li><a class="dropdown-item bg-warning text-lg text-light text-center border-inline" href="fejhallgatok.html" target="_blank">Új fejhallgatók</a></li>
+                    <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline" href="hasznaltfejhallgatok.html" target="_blank">Használt fejhallgatók</a></li>
                     <li><a class="dropdown-item bg-dark text-lig text-light text-center border-inline" href="szamitogepeklistaja.html" target="_blank">Számítógépek</a></li>
                     <li><a class="dropdown-item bg-dark text-lg text-light text-center border-inline"  href="ujalaplapoklistaja.html" target="_blank">Alaplapok </a></li>
                     <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline"  href="ujgephazaklistaja.html" target="_blank">Gépházak</a> </li>
@@ -169,7 +214,7 @@ padding:10px;}
   </div>
   <div class="card-body">
     <p class="card-text">Ez egy iskolai projekt, és itt semmit sem szállítunk ki valójában!</p>
-    <img src="Licensz.png">Elfogadtam
+    <img src="kepek/licensz.png">Elfogadtam
 
     </div>
     <div class="card-footer">
