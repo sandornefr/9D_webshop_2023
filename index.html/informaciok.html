@@ -1,14 +1,27 @@
-
-
-
-
-
-
-
-
 <html>
     <head>
         <style>
+            .navbarom{background-color:gray;
+          color:gold;
+        border:10px gold solid;
+      padding:20px;
+    margin:5px;}
+    .navbarom a{background-color:royalblue;
+    color:tomato;
+  width:20px;
+height:20px;
+border:5px teal solid;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;}
+.navbarom a:hover{background-color:tomato;
+color:royalblue;
+border:5px teal solid;
+width:20px;
+height:20px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;}
             .Vizi{background-color:yellow;
             color:blue;
         border:20px blue solid;
@@ -73,10 +86,9 @@ border:15px black solid;
 margin:7.5px;
 padding:7.5px;
 }
-.{
 
-}
-th,td{background-color:whitesmoke
+
+th,td{background-color:whitesmoke;
 color:black;
 }
 .effekt{opacity:0.8;
@@ -114,7 +126,14 @@ transition-timing-function:ease-in-out;}
                     <a class="nav-link" href="bejelentkezes.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Bejelentkezés</button></a>
                     <a class="nav-link" href="termekek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Termékek</button></a>
                     <a class="nav-link" href="osszestermek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Összes termék</button></a></ul>
-                <div class="többioldal">
+                    <div class="navbarom">
+                        <a href="fooldal.html"  target="_blank">Főoldal</a>
+                        <a href="regisztraciosfelulet.html"  target="_blank">Regisztráció</a>
+                        <a href="bejelentkezes.html"  target="_blank">Bejelentkezés</a>
+                        <a href="termekek.html"  target="_blank">Terrmékek</a>
+                        <a href="osszestermek.html"  target="_blank">Összes termék</a>
+                      </div> 
+                    <div class="többioldal">
     <a href="fooldal.html" target="_blank">Főoldal</a>
      <a href="regisztraciosfelulet.html" target="_blank">Regisztráció</a>
      <a href="bejelentkezes.html" target="_blank">Bejelentkezés</a>

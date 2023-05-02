@@ -1,17 +1,27 @@
-
-
-
-
-
-
-
-
-
-
-
 <html>
     <head>
         <style>
+            .navbarom{background-color:gray;
+          color:gold;
+        border:10px gold solid;
+      padding:20px;
+    margin:5px;}
+    .navbarom a{background-color:royalblue;
+    color:tomato;
+  width:20px;
+height:20px;
+border:5px teal solid;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;}
+.navbarom a:hover{background-color:tomato;
+color:royalblue;
+border:5px teal solid;
+width:20px;
+height:20px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;}
             .keret {background-color: black;
             color:yellow;
         border: 2px ridge white;
@@ -84,7 +94,16 @@ transition-timing-function:ease-in-out;}
             <a class="nav-link" href="termekek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Termékek</button></a>
             <a class="nav-link" href="informaciok.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Információk</button></a>
             <a class="nav-link" href="osszestermek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Összes termék</button></a></ul>
-        <div class="többioldal">
+            <div class="navbarom">
+            <a href="fooldal.html"  target="_blank">Főoldal</a>
+            <a href="regisztraciosfelulet.html"  target="_blank">Regisztráció</a>
+            <a href="termekek.html"  target="_blank">Termékek</a>
+            <a href="informaciok.html"  target="_blank">Információk</a>
+            <a href="osszestermek.html"  target="_blank">Összes termék</a>
+          </div> 
+          
+          
+            <div class="többioldal">
         <a href="fooldal.html" target="_blank">Főoldal</a>
      <a href="regisztraciosfelulet.html" target="_blank">Regisztráció</a>
      <a href="termekek.html" target="_blank">Termékek</a>
@@ -96,10 +115,10 @@ transition-timing-function:ease-in-out;}
         <div style="text-align:center; font-size:large;" class="keret">
             <h1 style="text-align:center; font-size:200%;">Bejelentkezés</h1>
         <label for="fname">Felhasználónév</label>
-        <input type="text" class="adatkeret" required placeholder="A mező nem maradhat üresen">
+        <input type="text" class="adatkeret" milength="1" required placeholder="A mező nem maradhat üresen">
         <br>
         <label for="password">Jelszó</label>
-        <input type="password" class="adatkeret" required placeholder="A mező nem maradhat üresen">
+        <input type="password" class="adatkeret" minlength="1" required placeholder="A mező nem maradhat üresen">
         <br>
         <button style="font-size:100%;" class="button button1">Bejelentkezés</button>
         <a href="elfelejtettjelszo.html" target="_blank">Elfelejtett jelszó?</a>
