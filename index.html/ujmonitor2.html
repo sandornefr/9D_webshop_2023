@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <title>Asus TUF VG27AQ monitor </title>
@@ -33,7 +34,8 @@ color:blue;}
 border:12px black solid;}
     </style>
     </head>
-    <div class=" my-4 card border-dark">
+    <body>
+    <div class="my-4 card border-dark">
         
         <div class="card-header bg-primary text-lg text-danger"> 
             <img src="kepek/ujmonitor2.webp" width="250" height="250">
@@ -41,8 +43,20 @@ border:12px black solid;}
 <p class="card-text bg-success text-center text-light">Asus TUF VG27AQ LED IPS Gaming monitor, 27", WQHD, DisplayPort, 1ms, 165Hz, G-Sync, HDR-10, Fekete
 </p>
 <p class="card-text bg-success text-center text-light">157 990 Ft</p>
-<div class="btn btn-dark text-center text-lg text-warning">
-<h1>Kosárba</h1>
+<button type="button" class="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu bg-light">
+       <li class="dropdown-item bg-danger text-warning"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+1</button></li>
+       <li class="dropdown-item bg-danger text-warning"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-danger text-warning"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-danger text-warning"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-danger text-warning"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+           </ul>
 </div>
     
 </div>
+    </div>
+    <script>
+        let kosarertek=0;
+        </script>
+</body>
+</html>

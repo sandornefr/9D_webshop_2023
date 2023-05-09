@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Használt fejhallgatók</title>
@@ -66,7 +67,14 @@ justify-content:center;}
        
         </div>
         <p>2990 Ft</p>
-        <button type="button" class="button button:hover;">Kosárba</button>
+        <button type="button" class="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+        <ul class="dropdown-menu">
+   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras+1;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">+1</button></li>
+   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras+5;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras-1;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras-5;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras-Dyras;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       </ul>
     </div>
         </div>
  </div>
@@ -89,7 +97,14 @@ justify-content:center;}
    
     </div>
     <p>6990 Ft</p>
-    <button type="button" class="button button:hover;">Kosárba</button>
+    <button type="button" class="Akg" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu">
+       <li class="dropdown-item"><button type="button" onclick="Akg=Akg+1;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">+1</button></li>
+       <li class="dropdown-item"><button type="button" onclick="Akg=Akg+5;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">+5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="Akg=Akg-1;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">-1</button></li>        
+       <li class="dropdown-item"><button type="button" onclick="Akg=Akg-5;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">-5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="Akg=Akg-Akg;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+           </ul>
 </div>
     </div>
 </div>
@@ -110,10 +125,23 @@ justify-content:center;}
    
     </div>
     <p>13990 Ft</p>
-    <button type="button" class="button button:hover;">Kosárba</button>
+    <button type="button" class="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+    <ul class="dropdown-menu">
+<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle+1;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">+1</button></li>
+<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle+5;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">+5</button></li>                            
+<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle-1;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">-1</button></li>        
+<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle-5;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">-5</button></li>                            
+<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle-Turtle;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   </ul>
 </div>
     </div>
 </div>
     </div>
+    <button type="button" class="button" onclick="console.log(`A kosárban ${Dyras} db Dyras, ${Akg} db Akg,  ${Turtle} db Turtle termék van jelenleg az összesítésben `);alert(`A kosarában ${Dyras} db Dyras, ${Akg} db Akg, ${Turtle} db Turtle termék van jelenleg az összesítésben`);">Összesítés</button>
+    <script>
+let Dyras=0;
+let Akg=0;
+let Turtle=0;
+        </script>
 </body>
 </html>

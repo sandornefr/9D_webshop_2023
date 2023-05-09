@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -45,9 +46,18 @@
         <li class="dropdown-item bg-success">1,5 év jótállás</li>
        </ul>
        </div>
-    <div class="gomb gomb:hover">Kosárba</div>
+       <button type="button" class="gomb" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+       <ul class="dropdown-menu bg-dark">
+  <li class="dropdown-item bg-light text-secondary"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+1</button></li>
+  <li class="dropdown-item bg-light text-secondary"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+5</button></li>                            
+  <li class="dropdown-item bg-light text-secondary"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-1</button></li>        
+  <li class="dropdown-item bg-light text-secondary"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-5</button></li>                            
+  <li class="dropdown-item bg-light text-secondary"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+      </ul>
     </div>
-       
+       <script>
+        let kosarertek=0;
+       </script>
 
 </body>
 </html>

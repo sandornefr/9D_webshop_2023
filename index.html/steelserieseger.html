@@ -1,5 +1,6 @@
 
 
+
 <html>
     <head>
         <title>Steelseries egér</title>
@@ -33,6 +34,20 @@ color:blue;}
     color:skyblue;
 border:12px black solid;}
 .közép{justify-content: center;}
+.gomb{background-color:gray;
+color:gold;
+border:5px gold solid;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;}
+.gomb:hover{background-color:gold;
+color:gray;
+border:5px gray solid;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;}
     </style>
     </head>
     <body style="background-color: coral;">
@@ -46,18 +61,21 @@ border:12px black solid;}
         <h1>Rival 500</h1>
         <h1>27 990 Ft</h1>
         <div class="foot p-5 my-5 bg-succesful text-center text-dark">
-       
-            <a href=""> <button type="button" class="btn btn-dark text-primary text-cener text-sm"> <p>Kosárba</p></button>
-            </a>
-            
-        </div>
+            <button type="button" class="gomb" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu bg-warning">
+       <li class="dropdown-item bg-dark text-light"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+1</button></li>
+       <li class="dropdown-item bg-dark text-light"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-dark text-light"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-dark text-light"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-dark text-light"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+           </ul>
+            </div>
              </div>
             </div>
         </header>
-
-
-
 </div>
-
+<script>
+    let kosarertek=0;
+</script>
     </body>
     </html>

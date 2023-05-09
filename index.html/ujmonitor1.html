@@ -1,4 +1,6 @@
 
+
+
 <html>
     <head>
         <title>Xiaomi Mi 27 monitor</title>
@@ -40,8 +42,16 @@ border:12px black solid;}
             <div class="card-title bg-dark text-large">Új termék</div>
 <p class="card-text bg-success text-center text-light">Xiaomi Mi 27" Desktop Monitor (BHR4975EU) 69 990 Ft</p>
 <p class="card-text bg-success text-center text-light">69 990 Ft</p>
-<div class="btn btn-dark text-center text-lg text-warning">
-<h1>Kosárba</h1>
-</div>
-    
+<button type="button" class="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu bg-light">
+       <li class="dropdown-item bg-warning text-success"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+1</button></li>
+       <li class="dropdown-item bg-warning text-success"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-warning text-success"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-warning text-success"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-warning text-success"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+          </ul>
+        </div>
+    <script>
+        let kosarertek=0;
+        </script>
 </div>

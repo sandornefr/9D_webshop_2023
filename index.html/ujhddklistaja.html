@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +8,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Új HDD-k listája</title>
-    
-    
-</head>
+    </head>
+    <style>
+        button{background-color:tomato;
+        color:green;
+    border:5px green solid;
+margin:5px;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;}
+button:hover{
+    background-color:green;
+    color:tomato;
+    border:5px tomato solid;
+    margin:5px;
+    padding:5px;
+    transition-duration:0.5s;
+    cursor:pointer;
+    transition-timing-function:ease-in-out;
+}
+        </style>
 <body>
     <div class="row">
         <div class="card bg-dark my-4 p-3 col-sm-4 g-4" style="max-width:20rem;">
@@ -31,9 +47,17 @@
                    </ul>
                 </div>
                 <img src="kepek/kekhdd.jpg" width="192" height="250">
-                <div class="btn my-4 p-3 btn-dark text-light">Kosárba</div>
+                <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu bg-dark">
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue+1;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">+1</button></li>
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue+5;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue-1;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue-5;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue-blue;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+           </ul>
         </div>
         </div>
+        
         <div class="card bg-dark my-4 p-3 col-sm-4 g-4" style="max-width:20rem;">
             <div class="card-header">
                 <div class="card-title text-danger">Western Digital WD Purple Pro 3.5 12TB 7200rpm 256MB SATA3 (WD121PURP)</div>
@@ -50,7 +74,14 @@
                    </ul>
                 </div>
                 <img src="kepek/lilahdd.jpg" width="192" height="250">
-                <div class="btn my-4 p-3 btn-dark text-light">Kosárba</div>
+                <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+                <ul class="dropdown-menu bg-dark">
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple+1;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">+1</button></li>
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple+5;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">+5</button></li>                            
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple-1;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">-1</button></li>        
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple-5;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">-5</button></li>                            
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple-purple;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+               </ul>
                 </div>
                 
                 <div class="card bg-dark my-4 p-3 col-sm-4" style="max-width:25rem;">
@@ -69,8 +100,21 @@
                            </ul>
                         </div>
                         <img src="kepek/piroshdd.jpg" width="192" height="250">
-                        <div class="btn my-4 p-3 btn-dark text-light">Kosárba</div>
+                        <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu bg-dark">
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red+1;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">+1</button></li>
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red+5;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red-1;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red-5;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red-red;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+           </ul>
         </div>
         </div>
+        <button type="button" onclick="console.log(`${blue} db Western Digital Wdd blue + ${purple} db Western Digital Wdd purple+ ${red} db Western Digital WD red termék a jelenlegi összesítés`); alert(`${blue} db Western Digital WD blue + ${purple} db Western Digital WD purple + ${red} db Western Digital WD red termék a jelenlegi összesítés`);">A kosár összesítése</button>
+        <script>
+let blue=0;
+let purple=0;
+let red=0;
+            </script>
 </body>
 </html>

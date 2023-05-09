@@ -20,6 +20,82 @@ cursor:pointer;}
 .x{transform:rotateX('angle');}
 .y{transform:rotateY('angle');}
 .z{transform:rotateZ('angle');}
+.összesítés{background-color:black;
+color:white;
+border:5px white solid;
+width:100px;
+height:100px;
+margin:5px;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:linear;}
+.összesítés:hover{
+    background-color:white;
+    color:black;
+    border:5px black solid;
+    width:100px;
+    height:100px;
+    margin:5px;
+    padding:5px;
+    transition-duration:0.5s;
+    cursor:pointer;
+    transition-timing-function:ease;
+}
+.lehetőségrazer{background-color:red;
+color:blue;
+border:5px blue solid;
+padding:5px;
+margin:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in;
+width:125px;}
+
+.lehetőségrazer:hover{background-color:blue;
+color:red;
+border:5px red solid;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;
+transform:rotate(90deg);
+}
+.lehetőségasus{
+    background-color:red;
+color:blue;
+border:5px blue solid;
+padding:5px;
+margin:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in;
+width:125px;
+}
+.lehetőségasus:hover{background-color:blue;
+color:red;
+border:5px red solid;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;
+transform:rotate(-90deg);}
+.lehetőségsamsung{background-color:red;
+color:blue;
+border:5px blue solid;
+padding:5px;
+margin:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in;
+width:125px;}
+.lehetőségsamsung:hover{
+    background-color:blue;
+color:red;
+border:5px red solid;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;
+transform:rotateY(360deg);}
+
             </style>
             </head>
             <body>
@@ -37,9 +113,14 @@ cursor:pointer;}
 </div>
 <img src="kepek/akciostermek1 (1).jpg" class="card-img-center" width="250" height="250">
 <div class="x">
-<div class="btn btn-dark text-center text-lg text-succes p-4">
-    Kosárba
-    </div>
+    <button type="button" class="lehetőségrazer" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+    <ul class="dropdown-menu bg-primary">
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer+1;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">Kosárba</button></li>
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer+5;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">+5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer-1;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">-1</button></li>        
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer-5;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">-5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer-Razer;console.log(`A Razer kosár ürítve lett`);alert(`A Razer kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   </ul>
 </div>
 </div>
 <div class="card mb-2 bg-success text-end p-5 my-3" style="max-width:75rem;">
@@ -55,8 +136,14 @@ cursor:pointer;}
 </div>
 <img src="kepek/akciostermek2.webp" class="card-img-center" width="250" height="250">
 <div class="y">
-<div class="btn btn-dark text-center text-lg text-succes p-4">
-Kosárba
+    <button type="button" class="lehetőségasus" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+    <ul class="dropdown-menu bg-primary">
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus+1;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">Kosárba</button></li>
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus+5;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">+5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus-1;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">-1</button></li>        
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus-5;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">-5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus-Asus;console.log(`Az Asus kosár ürítve lett`);alert(`Az Asus kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   </ul>
 </div>
 </div>
 </div>
@@ -73,11 +160,23 @@ Kosárba
 </div>
 <img src="kepek/akciostermek3.jpg" class="card-img-center" width="250" height="250">
 <div class="z">
-<div class="btn btn-dark text-center text-lg text-succes p-4 ">
-Kosárba
+    <button type="button" class="lehetőségsamsung" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+    <ul class="dropdown-menu bg-primary">
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung+1;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">+1</button></li>
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung+5;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">+5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung-1;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">-1</button></li>        
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung-5;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">-5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung-Samsung;console.log(`A Samsung kosár ürítve lett`);alert(`A Samsung kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   </ul>
 </div>
 </div>
 </div>
 </div>
+<button type="button" class="összesítés" onclick="console.log(`A kosárban ${Razer} db Razer, + ${Asus} db Asus, + ${Samsung} db Samsung termék van, eddig`);alert(`A kosarában ${Razer} db Razer, ${Asus} db Asus, ${Samsung} db Samsung termék van, eddig`);">Összesítés</button>
+<script>
+    let Razer=0;
+    let Asus=0;
+    let Samsung=0;
+</script>
             </body>
             </html>
