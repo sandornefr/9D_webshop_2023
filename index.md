@@ -1,1 +1,276 @@
-# 9D_webshop_2023
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+          .navbarom{background-color:gray;
+          color:gold;
+        border:10px gold solid;
+      padding:20px;
+    margin:5px;}
+    .navbarom a{background-color:royalblue;
+    color:tomato;
+  width:20px;
+height:20px;
+border:5px teal solid;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;}
+.navbarom a:hover{background-color:tomato;
+color:royalblue;
+border:5px teal solid;
+width:20px;
+height:20px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-out;}
+          .kilépésemelés{background-color:red;}
+          .kilépés{width:50px;
+          height:50px;
+        display:auto;
+      padding:5px;
+    border:10px black solid;
+  background-color:red;}
+          .vertical{overflow:auto;}
+          .vertical ul{background-color:cyan;
+          border:5px black solid;}
+        .vertical li{border-bottom:  1px black solid;
+        background-color:royalblue;
+      color:gold;}
+      .vertical li:hover{background-color:gold;
+    color:royalblue;}
+          body{background-image:url("kepek/webhatter.png")}
+            a:visited{
+                background-color:aqua;
+                color:red;
+                border:5px black solid;
+                margin:5px;
+                padding:5px
+            }
+            a:hover{background-color:brown;
+            color:blue;}
+            a:link{background-color:blanchedalmond;
+            color:black;
+        border: 5px black solid;
+    margin:5px;
+padding:5px;}
+a:active{background-color:silver;
+    color:gold;
+    border:20px gold solid;
+    margin:10px;
+    padding:10px;
+}
+            .többioldal{justify-content:left;
+            background-color:crimson;
+        color:cadetblue;
+    border:10px solid cadetblue;
+padding:10px;
+margin:10px;}
+.többioldal a{background-color: blanchedalmond;
+color:black;
+border:5px black solid;
+margin:5px;
+padding:5px;
+font-family:verdana;
+justify-content: right;}
+.többioldal a:hover{
+    background-color:black;
+    color:blanchedalmond;
+    transition-duration:0.5s;
+    cursor:pointer;
+}
+.kiemelés{background-color:gold;}
+#Modállom{background-color:gold;
+color:gray;}
+a:hover{transform:rotate(180deg);}
+.navbar{background-color:black;
+color:white;
+border:10px white solid;
+padding:5px;}
+.navbar button{background-color:black;
+color:white;
+border:5px white solid;
+padding:2px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;}
+.navbar button:hover{background-color:white;
+color:black;
+border:2px black solid;
+padding:1px;
+transition-duration:0.5s;
+cursor:pointer;
+transform:rotateX(180deg);
+transition-timing-function:ease-in-out;}
+.carousel{background-color:yellow;
+border:20px black solid;
+padding:10px;}
+.offcanvas{overflow:auto;}
+            </style>
+            </head>
+
+            <body>
+              <ul class="navbar">
+                <a class="nav-link" href="regisztraciosfelulet.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Regisztráció</button></a>
+                <a class="nav-link" href="bejelentkezes.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Bejelentkezés</button></a>
+                <a class="nav-link" href="termekek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Termékek</button></a>
+                <a class="nav-link" href="informaciok.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Információk</button></a>
+                <a class="nav-link" href="osszestermek.html" target="_blank"><button type="button" class="navbar button navbar button:hover">Összes termék</button></a></ul>
+              <div class="navbarom">
+                <a href="regisztraciosfelulet.html"  target="_blank">Regisztráció</a>
+                <a href="bejelentkezes.html"  target="_blank">Bejelentkezés</a>
+                <a href="termekek.html"  target="_blank">Termékek</a>
+                <a href="informaciok.html"  target="_blank">Információk</a>
+                <a href="osszestermek.html" target="_blank">Összes termék</a>
+
+              </div> 
+
+<div class="többioldal">
+    <a href="regisztraciosfelulet.html" target="_blank">Regisztráció</a> 
+    <a href="bejelentkezes.html" target="_blank">Bejelentkezés</a> 
+    <a href="termekek.html" target="_blank">Termékek</a>
+    <a href="informaciok.html" target="_blank">Információk</a>
+    <a href="osszestermek.html" target="_blank">Összes termék</a>
+ </div>
+ 
+ <div class="egy keretbe">
+ 
+<h1 style="background-color:gray; color:gold; text-align:center; font-size:200%;">Webáruház</h1>
+<div class="offcanvas" id="#offcanvas">
+
+</div>
+<div class="carousel">
+<div id="carosuel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="kepek/carouselkezdese.png" class="d-block w-100 h-50">
+    </div>
+    <div class="carousel-item">
+      <img src="kepek/ujeger1.jfif" alt="Alkatrészek" title="Alkatrészek" class=" d-block w-100 h-50"  >
+    <div class="carousel-caption text-light text-lg text-center">Perifériák</div>
+    </div>
+    <div class="carousel-item">
+      <img src="kepek/sapphirevideokartya.jpg" alt="Alkatrészek" titile="Alkatrészek" class=" d-block w-100 h-50" >
+<div class="carousel-caption text-dark text-lg text-center">Alkatrészek</div>    
+</div>
+    <div class="carousel-item">
+      <img src="kepek/ujgep1.webp" alt="Kész termékek" title="Kész termékek"  class="d-block w-100 h-50" >
+    <div class="carousel-caption text-light text-lg text-center">Kész termékek</div>
+    </div>
+  </div>
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+      </div>
+<div class="offcanvas offcanvas-start" id="offcanvasam">
+<div class="kilépésemelés"><div class="kilépés"><button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" style="float:right;"></button></div></div>
+  <div class="offcanvas-header bg-primary text-light text-lg">
+    <p style="background-color:royalblue;color:rosybrown; width:200px;">Nálunk kapható:</p>
+    <div class="vertical">
+    <ul class="list-group overflow:auto">
+   <li class="list-group-item">Új egér</li>
+   <br><li class="list-group-item">Új egérpad<li>
+   <br><li class="list-group-item">Új billentyűzet<li>
+    <br> <li class="list-group-item">Hangszórók</li>
+   <br><li class="list-group-item">Új fejhallgató<li>
+    <br><li class="list-group-item">Új hangszóró</li>
+    <br><li class="list-group-item">Új mikrofon</li>
+   <br><li class="list-group-item">Új monitor<li>
+   <br><li class="list-group-item">Új számítógép</li>
+   <br><li class="list-group-item">Új alaplap</li>
+   <br><li class="list-group-item">Új gépház</li>
+   <br><li class="list-group-item">Új videókártya</li>
+   <br><li class="list-group-item">Új tápegység</li>
+   <br><li class="list-group-item">Új Hdd</li>
+   <br><li class="list-group-item">Új Ssd</li>
+   <br><li class="list-group-item">Használt egér</li>
+   <br><li class="list-group-item">Használt egérpad</li>
+   <br><li class="list-group-item">Használt billentyűzet</li>
+   <br><li class="list-group-item">Használt fejhallgató</li>
+   <br><li class="list-group-item">Használt monitor</li>
+   <br><li class="list-group-item">Használt gép</li>
+   <br><li class="list-group-item">Akciós termék</li>
+   <br><a href="eszrevetel.html" target="_blank">Esetleges észrevételét elküldheti nekünk!</a>
+</ul>
+</div>
+</div>
+</div>
+<br>
+<button type="button" class="bg-success text-light text-lg text-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasam">Bővebben</button>
+ <div class="dropdown">
+                  <button type="button" class="btn btn-dark text-success" data-bs-toggle="dropdown" >
+                    Gyorsan a termékekre
+                  </button>
+                  <div class="kiemelés">
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline" href="egerek.html" target="_blank">Új egerek </a> </li>
+                    <li><a class="dropdown-item bg-dark text-lg text-light text-center blorder-inline"  href="hasznaltegereklistaja.html" target="_blank">Használt egerek </a> </li>
+                    <li><a  class="dropdown-item bg-success text-lg text-light text-center border-inline"  href="egerpadok.html" target="_blank">Egérpadok </a> </li>
+                    <li><a class="dropdown-item bg-warning text-lg text-light text-center border-inline" href="ujbillenytuzeteklistaja.html" target="_blank">Új billentyűzetek </a> </li>
+                    <li><a class="dropdown-item bg-secondary text-lg text-light text-center border-inline"  href="hasznaltbillentyuzeteklistaja.html" target="_blank">Használt billentyűzetek </a> </li>
+                    <li><a class="dropdown-item bg-success text-lg text-light text-center border-inline"  href="ujmonitoroklistaja.html" target="_blank">Új monitorok  </a></li>
+                    <li><a class="dropdown-item bg-danger text-lg text-light text-center border-inline"  href="hasznaltmonitoroklistaja.html" target="_blank">Használt monitorok </a></li>
+                    <li><a class="dropdown-item bg-dark text-lg text-light text-center border-inline" href="hangszoroklistaja.html" target="_blank">Hangszórók</a></li>
+                    <li><a class="dropdown-item bg-success text-lg text-light text-center border-inline" href="mikrofonok.html" target="_blank">Mikrofonok</a></li>
+                    <li><a class="dropdown-item bg-warning text-lg text-light text-center border-inline" href="fejhallgatok.html" target="_blank">Új fejhallgatók</a></li>
+                    <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline" href="hasznaltfejhallgatok.html" target="_blank">Használt fejhallgatók</a></li>
+                    <li><a class="dropdown-item bg-danger text-lig text-light text-center border-inline" href="szamitogepeklistaja.html" target="_blank">Számítógépek</a></li>
+                    <li><a class="dropdown-item bg-dark text-lg text-light text-center border-inline"  href="ujalaplapoklistaja.html" target="_blank">Alaplapok </a></li>
+                    <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline"  href="ujgephazaklistaja.html" target="_blank">Gépházak</a> </li>
+                    <li><a class="dropdown-item bg-success text-lg text-light text-center border-inline" href="ujprocesszoroklistaja.html" target="_blank">Processzorok</a></li>
+                    <li><a class="dropdown-item bg-warning text-lg text-light text-center border-inline" href="videokartyaklistaja.html" target="_blank">Videókártyák</a></li>
+                    <li><a class="dropdown-item bg-secondary text-lg text-light text-center border-inline" href="tapegysegeklistaja.html" target="_blank">Tápegységek</a></li>
+                    <li><a class="dropdown-item bg-danger text-lg text-light text-center border-inline" href="ujhddklistaja.html" target="_blank">HDD-k</a></li>
+                    <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline" href="ssdklistaja.html" target="_blank">SSD-k</a></li>
+                    <li><a class="dropdown-item bg-dark text-lg text-light text-center border-inline" href="akciostermekeklistaja.html" target="_blank">Akciós termékek</a></li>
+             
+                  </ul>
+                    </div>
+</div>
+<br>
+<button type="button" class="btn btn-danger text-center text-light text-lg" data-bs-toggle="modal" data-bs-target="#Modálom">
+  FELHÍVÁS!!
+</button>
+<div class="modal fade" id="Modálom">
+<div class="modal-dialog">
+  <h1 class="modal-text" id="Modálom" style="background-color:darkmagenta; color:lime;">Ezzel elfogadja a felhasználói feltételeket</h1>
+  <div class="card">
+<div class="card-header bg-primary text-lg text-light">
+  <h1 class="card-title">Felhasználó feltételek:</h1>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Ez egy iskolai projekt, és itt semmit sem szállítunk ki valójában!</p>
+    <img src="kepek/licensz.png">Elfogadtam
+    </div>
+    <div class="card-footer">
+      <div class="btn btn-close btn-primary text-lg text-light float:top" data-bs-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <div class="modal-footer">
+    
+      <div class="btn btn-close" data-bs-dismiss="modal">
+        <div class="bg-success text-dark">Elfogadom</div>
+      </div>
+</div>
+</div>
+<a href="#demo" class="btn btn-primary text-dark text-lg" data-bs-toggle="collapse">Súgó</a>
+<div id="demo" class="collapse bg-warning text-danger">Perifériákból, kapható új és használt, az egérpadok és a gépek kivételével, alkatrészekből csak új.<br>
+Termékeink: Egér,Egérpad,Billentyűzet,Monitor,Alaplap,Gépház,HDD,SDD,Videókártya,Processzor,Tápegység
+<br>
+<span style="font-size:200%;">AKCIÓS TERMÉKEINK</span> is vannak
+</div>
+</body>
+</html>
