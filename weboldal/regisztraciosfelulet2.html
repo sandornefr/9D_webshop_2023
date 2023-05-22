@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <style>
+        body{
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('kepek/webhatter.png');
+            background-size:cover;
+            background-position:center;
+            align-items:center;
+            justify-content:center;
+            display:flex;
+            overflow:hidden;
+        }
+        .regisztracio{
+            
+            width:300px;
+            height:350px;
+            background-color:rgba(13, 13, 82, 0.938);
+        box-shadow:5px 5px darkblue, 6px 6px black;
+        margin:5px;
+        top:50%;
+        position:absolute;
+        transform:translateY(-50%);
+        justify-content:Center;
+        }
+        .regisztracio h1{
+            font-size:200%;
+            text-align:Center;
+            font-weight:500;
+            color:red;
+            animation:2s infinite alternate-reverse villogás;
+        }
+        @keyframes villogás{
+            0%{color:red;}
+           50%{color:white;}
+          100%{color:red;}
+        }
+         .navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+    }
+    .részletek{text-align:left;}
+    nav{
+flex:1;
+text-align:right;
+margin-top:25px;
+    }
+    nav  ul li{
+list-style-type:none;
+display:inline-block;
+margin-left:10px;
+margin-right:2.5px;
+    }
+    nav  ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+    }
+    .container{
+
+    }
+    input{
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:5px dotted greenyellow;
+        background:transparent;
+        color:yellow;
+        justify-content:center;
+        margin-top:25px;
+        text-align:center;
+        line-height:5px;
+
+        
+
+    }
+    .regisztracio button{
+   
+width:90px;
+height:50px;
+background-color:gray;
+color:gold;
+border:2px gold solid;
+text-align:Center;
+cursor:pointer;
+transition-duration:0.5s;
+transition-timing-function:linear;}
+.regisztracio button:hover{
+    background-color:gold;
+    color:gray;
+    border:2px gray solid;
+
+}
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+    <nav>
+        <ul>
+<li><a href="fooldal.html" target="_blank">Főoldal</a></li>
+<li><a href="bejelentkezes.html" target="_blank">Bejelentekzés</a></li>
+<li><a href="termekek.html" target="_blank">Termékek</a></li>
+<li><a href="informaciok.html" target="_blank">Információk</a></li>
+
+
+</ul>
+</nav>
+</div>
+</div>
+
+<div class="regisztracio">
+    <h1>Regisztráció</h1>
+<label for="Valódi név">Valódi név</label>
+    <input type="text" minlength="1" required placeholder="Kérjük töltse ki ezt a mezőt!">
+</label>    
+<label for="Felhasználónév">Felhasználónév</label>
+    <input type="text" minlength="1" required placeholder="Kérjük töltse ki ezt a mezőt!">
+</label>
+<br>
+<label for="Email/telefon">Email/telefonszám</label>
+    <input type="tel" minlength="1" required placeholder="Kérjük töltse ki ezt a mezőt!">
+</label>
+<br>
+<label for="Jelszó">Jelszó</label>
+    <input type="password" minlength="1" required placeholder="Kérjük töltse ki ezt a mezőt!">
+</label>   
+<br>
+<button type="submit">Regisztráció</button>
+</div>
+</body>
+</html>
