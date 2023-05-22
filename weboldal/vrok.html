@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .reszletek{
+    overflow:auto;
+    border:5px black solid;
+background-color:white;
+color:black;
+width:125x;
+height:125px;
+}
+img{
+    border:10px inset red;
+    animation:alternate-reverse infinite 4s villogás;
+}
+@keyframes villogás{
+     0%{border:10px inset red;}
+    25%{border:10px inset blue;}
+    50%{border:10px inset yellow;}
+   100%{border:10px inset green;}
+}
+a{background-color:royalblue;
+color:gold;
+border:5px gold solid;
+padding:5px;
+letter-spacing:5px;
+cursor:pointer;
+position:relative;
+animation: alternate-reverse infinite 2s villogás;}
+@keyframes villogásb{
+    0%{background-color:royalblue;color:gold;border:5px gold solid;}
+   50%{background-color:gold;color:royalblue;border:5px royalblue solid;right:200px;}
+  100%{background-color:royalblue;color:gold;border:5px gold solid;left:200px;}
+}
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row gap-2 p-2">
+    <div class="card col-sm-4 bg-dark" style="width:400px;">
+        <div class="card-header text-light bg-waring">
+            <h1 class="card-title text-md text-center">
+                Meta Quest 2 128GB </h1>
+            </div>
+            <div class="card-body bg-success">
+                <img src="kepek/vr1.jpg" class="card-img-top">
+            </div>
+            <div class="card-text text-right text-sm">
+                <h1 style="text-align:right;color:white;">Részletek:</h1>
+                <div class="reszletek" style="float:right;">
+                <ul>
+                    <li>Felbontás: 2880 x 1600 képpont</li>
+                    <li>Kép frissitési frekvencia: 72 Hz</li>
+                    <li>Vezeték nélküli csatlkozás (Wi-Fi): N 802,11 b / g / / ac</li>
+                    <li>Gyorsulásmérő, magnetométer, giroszkóp</li>
+                    <li>Fejhallgató, 1x Micro USB C típus</li>
+                    <li>Hangszóró 2.0 hanggal és mikrofonnal</li>
+                    <li>Snapdragon 835 pocesszor</li>
+                    <li>128 GB kivitel</li>
+                    <li>Bluetooth 5.0</li>
+                    <li>Követelmény: Android 6.0 (marshmallow) / iPhone iOS 10 vagy újabb (Bluetooth 4.0, WiFi).</li>
+                </ul>
+                </div>
+            <div class="card-text text-right text-sm">
+
+            </div>
+            <div class="card-footer bg-primary">
+                <h1 style="background-color:gray; color:gold; font-size:200%; text-align:center">191 900 Ft</h1>
+                <br>
+                <button type="button" class="btn btn-dakr text-light text-lg text-center" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+                <ul class="dropdown-menu">
+<button type="button" class="dropdown-item bg-primary" onclick="meta128=meta128+1;console.log(`A kosárban ${meta128} db Meta Quest 2 128GB termék van`);alert(`A kosarában ${meta128} db Meta Quest 2 128GB termék van`);">Kosárba</button>
+<button type="button" class="dropdown-item bg-primary" onclick="meta128=meta128+5;console.log(`A kosárban ${meta128} db Meta Quest 2 128GB termék van`);alert(`A kosarában ${meta128} db Meta Quest 2 128GB termék van`);">+5</button>
+<button type="button" class="dropdown-item bg-primary" onclick="meta128=meta128-1;console.log(`A kosárban ${meta128} db Meta Quest 2 128GB termék van`);alert(`A kosarában ${meta128} db Meta Quest 2 128GB termék van`);">-1</button>
+<button type="button" class="dropdown-item bg-primary" onclick="meta128=meta128-5;console.log(`A kosárban ${meta128} db Meta Quest 2 128GB termék van`);alert(`A kosarában ${meta128} db Meta Quest 2 128GB termék van`);">-5</button>
+<button type="button" class="dropdown-item bg-primary" onclick="meta128=meta128-meta128;console.log('A kosár ürítve lett');alert('A kosarát ürítettük');">A kosár ürítése</button>                  
+                </ul>
+</div>
+<a href="vr1kepek.html" target="_blank">További képek</a>
+</div>
+</div>
+
+    <div class="card col-sm-4 bg-danger" style="width:400px;">
+        <div class="card-header bg-dark">
+            <h1 class="card-title text-light text-md text-center ">
+                Meta Quest Pro 256GB  </h1>
+            </div>
+            <div class="card-body bg-primary">
+                <img src="kepek/vr2.jpg" class="card-img-top">
+            </div>
+            <div class="card-text text-right text-sm">
+<h1 style="text-align:right;">Részletek:</h1>
+<div class="reszletek" style="float:right;">
+<ul>
+<li>Fekete</li>    
+<li>899-00412-01</li>
+</ul>
+</div>
+</ul>
+            </div>
+            <div class="card-footer bg-success">
+                <h1 style="background-color:gray; color:gold; font-size:200%; text-align:center">699 500 Ft</h1>
+                <br>
+                <button type="button" class="btn btn-dakr text-light text-lg text-center" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+                <ul class="dropdown-menu">
+<button type="button" class="dropdown-item bg-success" onclick="meta256=meta256+1;console.log(`A kosárban ${meta256} db Meta Quest Pro 256GB termék van`);alert(`A kosarában ${meta256} db Meta Quest Pro 256GB termék van`);">Kosárba</button>
+<button type="button" class="dropdown-item bg-success" onclick="meta256=meta256+5;console.log(`A kosárban ${meta256} db Meta Quest Pro 256GB termék van`);alert(`A kosarában ${meta256} db Meta Quest Pro 256GB termék van`);">+5</button>
+<button type="button" class="dropdown-item bg-success" onclick="meta256=meta256-1;console.log(`A kosárban ${meta256} db Meta Quest Pro 256GB termék van`);alert(`A kosarában ${meta256} db Meta Quest Pro 256GB termék van`);">-1</button>
+<button type="button" class="dropdown-item bg-success" onclick="meta256=meta256-5;console.log(`A kosárban ${meta256} db Meta Quest Pro 256GB termék van`);alert(`A kosarában ${meta256} db Meta Quest Pro 256GB termék van`);">-5</button>                 
+<button type="button" class="dropdown-item bg-success" onclick="meta256=meta256-meta256;console.log('A kosár ürítve lett');alert('A kosarát ürítettük');">A kosár ürítése</button>                    
+                </ul>
+                </div>
+                <a href="vr2kepek.html" target="_blank">További képek</a>
+                </div>
+ <div class="card col-sm-4 bg-success" style="width:400px;">
+        <div class="card-header bg-dark">
+            <h1 class="card-title text-light text-md text-center">
+               
+                HTC Vive Cosmos Elite</h1>
+            </div>
+            <div class="card-body bg-warning">
+                <img src="kepek/vr3.jpg" class="card-img-top">
+            </div>
+            <div class="card-text text-right text-sm">
+<h1 style="text-align:right;">Részletek:</h1>
+<div class="reszletek" style="float:right;">
+<ul>
+<li>Felbontás: 1440 x 1700 pixel </li>    
+<li>Képfrissítés: 90 Hz</li>
+<li>Látószög: Maximum 110 fok</li>
+<li>Sztereó fejhallgató</li>
+<li>Sztereó fejhallgató</li>
+<li>Csatlakozás: USB 3.0, DP 1.2 </li>
+<li>Érzékelők: G-szenzor, Giroszkóp, Szemkímélő funkció (IPD)</li>
+<li>Felhajtható vízor Állítható fejpánt Használatához 3,5 x 3,5 méter szabad hely szükséges </li>
+</ul>
+</div>
+            <div class="card-text text-right text-sm">
+                
+
+            </div>
+            <div class="card-footer bg-danger">
+                <h1 style="background-color:gray; color:gold; font-size:200%; text-align:center">309 990 Ft</h1>
+                <br>
+                <button type="button" class="btn btn-dakr text-light text-lg text-center" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+                <ul class="dropdown-menu">
+<button type="button" class="dropdown-item bg-danger" onclick="htc=htc+1;console.log(`A kosárban ${htc} db HTC termék van`);alert(`A kosarában ${htc} db HTC termék van`);">Kosárba</button>
+<button type="button" class="dropdown-item bg-danger" onclick="htc=htc+5;console.log(`A kosárban ${htc} db HTC termék van`);alert(`A kosarában ${htc} db HTC termék van`);">+5</button>
+<button type="button" class="dropdown-item bg-danger" onclick="htc=htc-1;console.log(`A kosárban ${htc} db HTC termék van`);alert(`A kosarában ${htc} db HTC termék van`);">-1</button>
+<button type="button" class="dropdown-item bg-danger" onclick="htc=htc-5;console.log(`A kosárban ${htc} db HTC termék van`);alert(`A kosarában ${htc} db HTC termék van`);">-5</button>
+<button type="button" class="dropdown-item bg-danger" onclick="htc=htc-htc;console.log('A kosár ürítve lett');alert('A kosarát ürítettük');">A kosár ürítése</button>            
+                </ul>
+            </div>
+<a href="vr3kepek.html" target="_blank">További képek</a>
+        </div>
+            </div>
+
+            <button type="button" onclick="console.log(`${meta128} db Meta Quest 2 128GB, ${meta256} db Meta Quest Pro 256GB , ${htc} db HTC termék a jelenlegi összesítés`);alert(`${meta128} db Meta Quest 2 128GB, ${meta256} db Meta Quest Pro 256GB , ${htc} db HTC termék a jelenlegi összesítés`);">A kosár összesítése</button>
+<script>
+    let meta128=0;
+    let meta256=0;
+    let htc=0;
+    </script>
+</script>
+</body>
+</html>
