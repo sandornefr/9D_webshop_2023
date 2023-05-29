@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <style>
+        body{
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('kepek/webhatter.png');
+            background-position:center;
+            background-size:cover>
+        }
+        .navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+    }
+    .részletek{text-align:left;}
+    nav{
+flex:1;
+text-align:right;
+margin-top:25px;
+    }
+    nav  ul li{
+list-style-type:none;
+display:inline-block;
+margin-left:15px;
+margin-right:2.5%;
+    }
+    nav  ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+    }
+    nav ul li a::after{
+      content:'';
+      width:auto;
+      height:auto;
+      background-color:red;
+    }
+    nav ul li a:hover{
+      color:yellow;
+      transition-duration:0.5s;
+      text-decoration-line:underline;
+      text-decoration-color:red;
+      transition-timing-function: linear;
+      text-decoration-line: 5px;
+    }
+    nav button{
+      float:left;
+      top:5%;
+      left:5%;
+    }
+    .bejelentkezes{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:400px;
+        height:350px;
+        border:5px red solid;
+        background-color:black;
+        animation:4s infinite villogas alternate-reverse;
+    }
+    @keyframes villogas{
+0%{border:5px red  solid;};
+25%{border:5px blue  solid;};
+50%{border:5px yellow solid;};
+75%{border:5px green  solid;};
+100%{border:5px red solid;};        
+    }
+    .bejelentkezes label{
+font-size:200%;
+color:gold;
+font-weight:500;
+text-align:left;
+margin-top:10px;
+margin-bottom:5px;
+
+    }
+    .egybe{
+        top:50%;
+    }
+    
+    .bejelentkezes input{
+background:transparent;
+border:5px white solid;
+margin-bottom:5px;
+    }
+    .bejelentkezesgomb{
+        margin-top:20px;
+        background-color:gray;
+        color:gold;
+        left:50%;
+        border:5px gold solid;
+        transition-duration:0.5s;
+        cursor:pointer;
+        transition-timing-function:linear;
+    }
+    .bejelentkezesgomb{
+        background-color:gold;
+        color:gray;
+        border:5px gray solid;
+        transition-duration:0.5s;
+        transition-timing-function:linear;
+    }
+    .bejelentkezes h1{
+        font-size:200%;
+        font-weight:700;
+        text-align:center;
+        color:red;
+        animation:4s villogas infinite alternate-reverse; 
+    }
+    .jelentkezes{
+        background-color:gray;
+        color:gold;
+        border:5px gold solid;
+        padding:5px;
+        margin-top:15px;
+        text-align:center;
+        width:65px;
+        height:32.5px;
+        
+        font-weight:500;
+        transition-duration:0.5s;
+        cursor:pointer;
+        transition-timing-function:linear;
+    }
+    .jelentkezes:hover{
+        background-color:gold;
+        color:gray;
+        border:5px gray solid;
+        transition-duration:0.5s;
+        cursor:pointer;
+        transition-timing-function:linear;
+    }
+    @keyframes villogas{
+0%{color:red;}
+25%{color:blue;}
+50%{color:yellow;}
+75%{color:green;}
+100%{color:red;}
+    }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+</head>
+<body>
+     <div class="navbar">
+        <nav>
+            <ul>
+              
+<li><a href="fooldal.html" target="_blank">Főoldal</a></li>
+<li><a href="regisztraciosfelulet2.html" target="_blank">Regisztráció</a></li>
+<li><a href="bejelentkezes.html" target="_blank">Bejelentkezés</a></li>
+<li><a href="termekek.html" target="_blank">Termékek</a></li>
+<li><a href="informaciok.html" target="_blank">Információ</a></li>
+    </ul>
+    </nav>
+</div>
+<div class="bejelentkezes">
+    <div class="egybe">
+<h1>Bejelentkezés</h1>
+<label for="Felhasználónév">Felhasználónév</label>
+<input type="text" minlength="1" required placeholder="Ez a mező nem maradhat üresen">
+<br>
+<label for="Jelszó">Jelszó</label>
+<input type="password" minlength="1" required placeholder="Ez a mező nem maradhat üresen">
+<br>
+<input type="submit" class="jelentkezes">
+<br>
+<a href="elfelejtettjelszo.html" target="_blank">Elfelejtettem a jelszavamat</a>
+    </div>
+    </div>
+    
+</div>
+</body>
+</html>
