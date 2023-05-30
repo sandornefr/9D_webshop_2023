@@ -1,5 +1,6 @@
 
 
+
 <html>
     <head>
         <title>Fejhallgatók</title>
@@ -21,6 +22,7 @@ margin:5px;
 transition-duration:0.5s;
 cursor:pointer;
 transition-timing-function:linear;
+width:auto;
 }
 button:hover{background-color:cornsilk;
 color:crimson;
@@ -72,10 +74,10 @@ justify-content:end;}
     <div class="card-footer bg-dark">
         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
         <ul class="dropdown-menu">
-   <li class="dropdown-item"><button type="button" onclick="Louise=Louise+1; Louiseár=Louiseár+Louiseár*1;console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">Kosárba</button></li>
-   <li class="dropdown-item"><button type="button" onclick="Louise=Louise+5; Louiseár=Louiseár+Louiseár*5;console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="Louise=Louise-1; Louiseár=Louiseár-Louiseár*1;console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="Louise=Louise-5; Louiseár=Louiseár-Louiseár*5;console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="Louise=Louise+1; Louiseár=Louiseár+(Louiseár*1);console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">Kosárba</button></li>
+   <li class="dropdown-item"><button type="button" onclick="Louise=Louise+5; Louiseár=Louiseár+(Louiseár*5);console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="Louise=Louise-1; Louiseár=Louiseár-(Louiseár*1);console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="Louise=Louise-5; Louiseár=Louiseár-(Louiseár*5);console.log(`A kosárban ${Louiese} db Louise termék van, jelenlegi ár${Louiseár} Ft`);alert(`A kosarában ${Louise} db Louise termék van, jelenlegi ár ${Louiseár} Ft`);">-5</button></li>                            
    <li class="dropdown-item"><button type="button" onclick="Louise=Louise-Louise;Louiseár=Lousiseár-Louiseár;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
     </div>
@@ -100,10 +102,10 @@ justify-content:end;}
     <div class="card-footer bg-dark">
         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
         <ul class="dropdown-menu">
-   <li class="dropdown-item"><button type="button" onclick="JBL=JBL+1;  JBLár=JBLár+JBLár*1;console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">Kosárba</button></li>
-   <li class="dropdown-item"><button type="button" onclick="JBL=JBL+5;  JBLár=JBLár+JBLár*5;console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="JBL=JBL-1;  JBLár=JBLár-JBLár*1;console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="JBL=JBL-5;  JBLár=JBLár-JBLár*5;console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="JBL=JBL+1;  JBLár=JBLár+(JBLár*1);console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">Kosárba</button></li>
+   <li class="dropdown-item"><button type="button" onclick="JBL=JBL+5;  JBLár=JBLár+(JBLár*5);console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="JBL=JBL-1;  JBLár=JBLár-(JBLár*1);console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="JBL=JBL-5;  JBLár=JBLár-(JBLár*5);console.log(`A kosárban${JBL} darab JBL termék van, jelenlegi ár ${JBLár} Ft`);alert(`A kosarában${JBL} db JBL termék van, jelenlegi ár ${JBLár} Ft`);">-5</button></li>                            
    <li class="dropdown-item"><button type="button" onclick="JBL=JBL-JBL;JBLár=JBLár-JBLár;console.log(`A kosár ürítve lett`);alert(`A  kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
     </ul>
@@ -132,23 +134,25 @@ justify-content:end;}
     <div class="card-footer bg-dark">
         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
         <ul class="dropdown-menu">
-   <li class="dropdown-item"><button type="button" onclick="Sony=Sony+1;Sonyár=Sonyár+Sonyár*1;console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">Kosárba</button></li>
-   <li class="dropdown-item"><button type="button" onclick="Sony=Sony+5;Sonyár=Sonyár+Sonyár*5;console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="Sony=Sony-1;Sonyár=Sonyár-Sonyár*1;console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="Sony=Sony-5;Sonyár=Sonyár-Sonyár*5;console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="Sony=Sony+1;Sonyár=Sonyár+(Sonyár*1);console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">Kosárba</button></li>
+   <li class="dropdown-item"><button type="button" onclick="Sony=Sony+5;Sonyár=Sonyár+(Sonyár*5);console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="Sony=Sony-1;Sonyár=Sonyár-(Sonyár*1);console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="Sony=Sony-5;Sonyár=Sonyár-(Sonyár*5);console.log(`A kosárban${Sony} db Sony termék van, jelenlegi ár${Sonyár} Ft`);alert(`A kosarában${Sony} db Sony termék van, jelenleg ár ${Sonyár} ft`);">-5</button></li>                            
    <li class="dropdown-item"><button type="button" onclick="Sony=Sony-Sony;Sonyár=Sonyár-Sonyár;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
 </div>
 </div>
 <button type="button" onclick="console.log(` ${Louise} db Louise,${JBL} db JBL,${Sony} db Sony termék a jelenlegi végösszesítés`);alert(`${Louise} db Louise, ${JBL} db JBL, ${Sony} db Sony, termék a jelenlegi végösszesítés`);">Összesítés</button>
-
+<br>
+<button type="button" onclick="fizetendo=Louisear+JBLar+Sonyar;console.log(`A jelenlegi ára a rendelésnek : ${fizetendo} ft`);alert(`A jelenlegi ára a rendelésnek :${fizetendo}`);">A jelenlegi fizetendő összeg megtekintése</button>
 <script>
     let Louise=0;
     let JBL=0;
     let Sony=0;
-    let Louiseár=11875;
-    let JBLár=19990;
-    let Sonyár=117990;
+    let Louisear=11875;
+    let JBLar=19990;
+    let Sonyar=117990;
+    let fizetendo=0;
 </script>
     </body>
 </html>

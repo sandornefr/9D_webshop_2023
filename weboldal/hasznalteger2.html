@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <title>DELL MS111 USB EGÉR</title>
@@ -64,11 +65,11 @@ transform:rotateX(180deg);}
         <div class="foot p-5 my-5 bg-succesful text-center text-dark">
             <button type="button" class="gomb" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu bg-danger">
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+1</button></li>
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+5</button></li>                            
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-1</button></li>        
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-5</button></li>                            
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyiseg();kosarertek=kosarertek+1;egerar=egerar+(1000*1);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+1</button></li>
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyiseg();kosarertek=kosarertek+5;egerar=egerar+(1000*5);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-1;egerar=egerar-(1000*1);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-5;egerar=egerar-(1000*5);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-kosarertek;egerar=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
             </div>
             </div>
@@ -76,10 +77,21 @@ transform:rotateX(180deg);}
 
 </button>
 
-
+<button type="button" onclick="console.log(`A kosár jelenlegi értéke ${egerar} Ft`);alert(`A kosár jelenlegi értéke ${egerar} Ft`);">A kosár tartalmának az árának a megtekintése</button>
 </div>
 <script>
     let kosarertek=0;
+    let egerar=0;
+    function mennyiseg(){
+if(kosarertek<0){
+    kosarertek=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(kosarertek>=20){
+    kosarertek=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
 </script>
     </body>
     </html>

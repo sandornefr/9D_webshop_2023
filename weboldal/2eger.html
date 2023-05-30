@@ -1,3 +1,6 @@
+
+
+
 <html>
     <head>
         <title> 500-2000DPI egér</title>
@@ -55,29 +58,36 @@ border:12px black solid;}
         <div class="foot p-5 my-5 bg-succesful text-center text-dark">
             <button type="button" data-bs-toggle="dropdown" class="gomb" onclick="document.getElementByClassName('gomb').style.color='aqua'">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu">
-        <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="kosarertek=kosarertek+1; console.log(`A kosár értéke:${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">Kosárba</button>
-   <button style="text-align:center;" type="button"  class="button button1 dropdown-item" onclick="kosarertek=kosarertek+5;console.log(`A kosár értéke:${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">+5</button>
-    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="kosarertek=kosarertek-1; console.log(`A kosár értéke:${kosarertek}`); alert(`A kosarában ${kosarertek} termék van  `);">-1</button>
-    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="kosarertek=kosarertek-5; console.log(`A kosár értéke:${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">-5</button>
-    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="kosarertek=kosarertek-kosarertek; console.log(`A kosár nullázva:${kosarertek}`); alert(`A kosarát nulláztuk ${kosarertek} termék van`);">A kosár ürítése</button>
+    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="mennyiseg();kosarertek=kosarertek+1;egerar=egerar+(3800*1); console.log(`A kosár értéke: ${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">Kosárba</button>
+    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="mennyiseg();kosarertek=kosarertek+5;egerar=egerar+(3800*5); console.log(`A kosár értéke: ${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">+5</button>
+    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="mennyiseg();kosarertek=kosarertek-1;egerar=egerar-(3800*1); console.log(`A kosár értéke: ${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">-1</button>
+    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="mennyiseg();kosarertek=kosarertek-5;egerar=egerar-(3800*5); console.log(`A kosár értéke: ${kosarertek}`); alert(`A kosarában ${kosarertek} termék van`);">-5</button>
+    <button style="text-align:center;" type="button" class="button button1 dropdown-item" onclick="mennyiseg();kosarertek=kosarertek-kosarertek;egerar=0; console.log(`A kosár nullázva: ${kosarertek}`); alert(`A kosarát nulláztuk ${kosarertek} termék van`);">A kosár ürítése</button>
 
 </ul>
 <br>
 <button type="button" class="gomb"><a href="tobbkep2eger.html" target="_blank">Több kép</a></button>
+<br>
+<button type="button" class="gomb" onclick="console.log(`A kosár jelenlegi értéke ${egerar} Ft`);alert(`A kosár jelenlegi értéke ${egerar} Ft`);">A kosár tartalmának az árának a megtekintése</button>
             </div>
             </div>
         </header>
 </button>
 </div>
+
 <script>
 let kosarertek=0;
-if(0>kosarertek){
-    alert('A kosár értéke nem lehet minusz');
+let egerar=0;
+function mennyiseg(){
+if(kosarertek<0){
+    kosarertek=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
 }
-
-
-   
-
+else if(kosarertek>=20){
+    kosarertek=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
 </script>
     </body>
     </html>

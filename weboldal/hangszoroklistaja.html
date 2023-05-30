@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -83,11 +84,11 @@ transition-timing-function:ease-in;}
     <h1 style="background-color:royalblue; color:gold; font-size:200%;text-align:center">18990 Ft</h1>
     <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu">
-       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier+1;console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">+1</button></li>
-       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier+5;console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">+5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier-1;console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">-1</button></li>        
-       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier-5;console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">-5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier-Edifier;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier+1;Edifierar=Edifierar+(Edifierar*1);console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">+1</button></li>
+       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier+5;Edifierar=Edifierar+(Edifierar*5);console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">+5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier-1;Edifierar=Edifierar-(Edifierar*1);console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">-1</button></li>        
+       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier-5;Edifierar=Edifierar-(Edifierar*5);console.log(`A kosárban ${Edifier} db Edifier termék van`);alert(`A kosarában ${Edifier} db Edifier termék van`);">-5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="Edifier=Edifier-Edifier;Edifierar=Edifierar-Edifierar;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
     <a href="hangszoro1kepek.html" target="_blank">Több kép</a>
             </div>
@@ -110,11 +111,11 @@ transition-timing-function:ease-in;}
     <h1 style="background-color:royalblue; color:gold; font-size:200%;text-align:center">4090 Ft</h1>
     <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu">
-       <li class="dropdown-item"><button type="button" onclick="Box=Box+1;console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">+1</button></li>
-       <li class="dropdown-item"><button type="button" onclick="Box=Box+5;console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">+5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Box=Box-1;console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">-1</button></li>        
-       <li class="dropdown-item"><button type="button" onclick="Box=Box-5;console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">-5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Box=Box-Box;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanembox();Box=Box+1;Boxar=Boxar+(Boxar*1);console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">+1</button></li>
+       <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanembox();Box=Box+5;Boxar=Boxar+(Boxar*5);console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">+5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanembox();Box=Box-1;Boxar=Boxar-(Boxar*1);console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">-1</button></li>        
+       <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanembox();Box=Box-5;Boxar=Boxar-(Boxar*5);console.log(`A kosárban ${Box} db Box termék van`);alert(`A kosarában ${Box} db Box termék van`);">-5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanembox();Box=Box-Box;Boxar=Boxar-Boxar;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
     <a href="hangszoro2kepek.html" target="_blank">Több kép</a>
             </div>
@@ -137,22 +138,59 @@ transition-timing-function:ease-in;}
 <h1 style="background-color:royalblue; color:gold; font-size:200%;text-align:center">6490 Ft</h1>
 <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu">
-       <li class="dropdown-item"><button type="button" onclick="Trust=Trust+1;console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">+1</button></li>
-       <li class="dropdown-item"><button type="button" onclick="Trust=Trust+5;console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">+5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Trust=Trust-1;console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">-1</button></li>        
-       <li class="dropdown-item"><button type="button" onclick="Trust=Trust-5;console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">-5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Trust=Trust-Trust;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick=" minuszbanemsokbanemtrust();Trust=Trust+1;Trustar=Trustar+(Trustar*1);console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">+1</button></li>
+       <li class="dropdown-item"><button type="button" onclick=" minuszbanemsokbanemtrust();Trust=Trust+5;Trustar=Trustar+(Trustar*5);console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">+5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick=" minuszbanemsokbanemtrust();Trust=Trust-1;Trustar=Trustar-(Trustar*1);console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">-1</button></li>        
+       <li class="dropdown-item"><button type="button" onclick=" minuszbanemsokbanemtrust();Trust=Trust-5;Trustar=Trustar-(Trustar*5);console.log(`A kosárban ${Trust} db Trust termék van`);alert(`A kosarában ${Trust} db Trust termék van`);">-5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick=" minuszbanemsokbanemtrust();Trust=Trust-Trust;Trustar=Trustar-Trustar;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
 <a href="hangszoro3kepek.html" target="_blank">Több kép</a>
         </div>
     </div>
 </div>
 <button type="button" onclick="console.log(`${Edifier} db Edifier, ${Box} db Box, ${Trust} db Trust, termék a jelenlegi összesítés`); alert(` ${Edifier} db Edifier, ${Box} db Box, ${Trust} db Trust termék az eddigi összesítés`);">Összesítés</button>
+<br>
+<button type="button" onclick="fizetendo=Edifierar+Boxar+Trustar;console.log(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);alert(`A jelenlegi ára a rendelésnek ${fizetendo} ft`);">A jelenlegi fizetendő összeg megtekintése</button>
 <script>
 let Edifier=0;
 let Box=0;
 let Trust=0;
 let osszes=0;
+let Edifierar=19000;
+let Boxar=4100;
+let Trustar=6500;
+let fizetendo=0;
+function minuszbanemsokbanemedifier{
+if(Edifier<0 ){
+    Edifier=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Edifier>=20){
+    Edifier=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function minuszbanemsokbanembox{
+if(Box<0){
+    Box=0;
+    alert('A termék mennyisége nme mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Box>=20){
+    Box=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function minuszbanemsokbanemtrust{
+    if(Trust<0){
+        Trust=0;
+        alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+    }
+else if(Trust>=20){
+    Trust=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+
 </script>
 </body>
 </html>

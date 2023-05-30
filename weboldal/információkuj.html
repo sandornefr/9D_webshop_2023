@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <style>
+        .header{
+width:100%;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('kepek/webhatter.png');
+background-size:cover;
+background-position:center;
+        }
+        .navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+    }
+    .részletek{text-align:left;}
+    nav{
+flex:1;
+text-align:right;
+margin-top:25px;
+    }
+    nav  ul li{
+list-style-type:none;
+display:inline-block;
+margin-left:15px;
+margin-right:2.5%;
+    }
+    nav  ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+    }
+    nav ul li a::after{
+      content:'';
+      width:auto;
+      height:auto;
+      background-color:red;
+    }
+    nav ul li a:hover{
+      color:yellow;
+      transition-duration:0.5s;
+      text-decoration-line:underline;
+      text-decoration-color:red;
+      transition-timing-function: linear;
+      text-decoration-line: 5px;
+    }
+    .szoveg{
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        position:absolute;
+        text-align:center;
+        display:flex;
+    }
+    .szoveg h1{
+        font-size:50px;
+        color:white;
+        font-weight:500;
+        
+    }
+    .szoveg p{
+margin-top:5px;
+color:white;
+font-size:25px;
+font-weight:250;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <nav>
+                <ul>
+<li><a href="fooldal2.html" target="_blank">Főoldal</a></li>
+<li><a href="regisztraciosfelulet2.html" target="_blank">Regisztráció</a></li>
+<li><a href="bejelentkezes.html" target="_blank">Bejelentkezés</a></li>
+<li><a href="termekek.html" target="_blank">Termékek</a></li>
+<li><a href="informaciok.html" target="_blank">Információ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="szoveg">
+            <h1>Információk</h1>
+            <p>A következő információk sok mindenben segíthetnek</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <style>
+        .doboz{border:10px gold inset;
+        padding:5px;}
+        .kérés{border-top:5px gray solid;
+        }
+        .sötét button{background-color:black;
+        color:white;
+    border:5px white solid;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:linear;}
+.sötét button:hover{
+    background-color:white;
+    color:Black;
+    border:5px black solid;
+    padding:5px;
+    transition-duration:0.5s;
+    cursor:pointer;
+    transition-timing-function:linear;
+}
+
+        .világos button{ background-color:white;
+    color:Black;
+    border:5px black solid;
+    padding:5px;
+    transition-duration:0.5s;
+    cursor:pointer;
+    transition-timing-function:linear;}
+
+        .világos button:hover{background-color:black;
+        color:white;
+    border:5px white solid;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:linear;}
+
+            </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feltételek</title>
+</head>
+<body>
+<div class="sötét"><button type="button" onclick="sötét()">Sötét mód</button></div>
+<div class="világos"><button type="button" onclick="világos()">Világos mód</button></div>
+<a href="fooldal.html">Vissza a főoldalra</a>
+    <div class="doboz"><h1 style="font-size:200%; text-align:center;">Felhasználói feltételek:</h1>
+        <br>
+    <p style="font-size:200%;color:red;">Ezzel elfogadja, hogy:</p>
+    <br>
+<ol type="1">
+<li>Ez egy iskolai projekt, így nem áll módunkban semmit sem kiszállítani</li>
+<li>Ezek a termékek nem általunk gyártottak, és nem is forgalmazzuk őket</li>
+<li>Az oldal több helyen is hibás lehet</li>    
+<li>A kódot, engedély nélkül nem lehet használni</li>
+<p>Engedély kérése/ észrevétel jelzése:</p>
+<div class="kérés">
+<a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJvqrnkBGcxjrkZDcGwvLbzQGlRBvNWsStFCgFhpmbCPcFhdRpSbvlXcvXfjfXdrvNMkFTg" target="_blank">Kocsismarcell5@gmail.com</a>
+</div>
+</ol>
+</div>
+<script>
+    function sötét(){
+document.body.style.background="black";
+document.body.style.color="white";
+    }
+function világos(){
+document.body.style.background="white";
+    document.body.style.color="black";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Ramok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        a{background-color:black;
+        color:white;
+    border:5px white solid;
+padding:5px;
+margin:10px;
+width:400px;
+height:100px;
+text-align:center;
+font-size:200%;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:linear;
+text-decoration-line:underline overline;
+text-decoration-color:orange;
+}
+        a:hover{
+            background-color:white;
+            color:black;
+            border:5px black solid;
+        padding:5px;
+        margin:10px;
+        font-size:100%;
+        width:400px;
+        height:75px;
+        text-align:center;
+        transition-duration:0.5s;
+        cursor:pointer;
+        transition-timing-function:linear;
+        text-decoration-line:underline overline;
+        text-decoration-color:orangered;
+        text-decoration-style:double;
+        }
+        button{background-color:dimgrey;
+        color:firebrick;
+    border:5px firebrick solid;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;
+}
+button:hover{background-color:firebrick;
+color:dimgrey;
+border:5px dimgrey solid;
+padding:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:ease-in-out;}
+        img{border:10px red solid;
+        animation: infinite 4s villogás;
+    }
+        @keyframes villogás{
+            0%{border:10px red solid;}
+            25%{border:10px blue solid;}
+           50%{border:10px yellow solid;}
+            75%{border:10px green solid;}
+            100%{border:10px red solid;}
+        }
+    </style>
+</head>
+<body>
+    <div class="row  gap-3 p-2 my-2 mt-2" >
+        <div class="card col-sm-4 bg-primary " style="width:400px;">
+            <div class="card-header bg-danger text-light text-center text-md">
+                Új termék
+            </div>
+            <div class="card-body bg-success">
+                <img src="kepek/ram1.jpg" class="card-img-top" width="250" height="250">            
+            </div>
+            <div class="card-footer bg-secondary">
+                <h1 class="card-title bg-success text-dark text-center text-lg">Kingston ValueRAM 16GB DDR4 2400MHz KVR24N17D8/16</h1>
+            </div>
+            <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+            <ul class="dropdown-menu  bg-warning">
+<li class="dropdown-item bg-danger" onclick="menyisegkingstonv();Kingstonvalue=Kingstonvalue+1;kingstonvar=kingstonvar+(1*15700); console.log(`A kosárban ${Kingstonvalue} db Kingston Value termék van`);alert(`A kosarában ${Kingstonvalue} db Kingston Value termék van`);">Kosárba</li>
+<li class="dropdown-item bg-danger" onclick="menyisegkingstonv();Kingstonvalue=Kingstonvalue+5;kingstonvar=kingstonvar+(5*15700); console.log(`A kosárban ${Kingstonvalue} db Kingston Value termék van`);alert(`A kosarában ${Kingstonvalue} db Kingston Value termék van`);">+5</li>
+<li class="dropdown-item bg-danger" onclick="menyisegkingstonv();Kingstonvalue=Kingstonvalue-1;kingstonvar=kingstonvar-(1*15700); console.log(`A kosárban ${Kingstonvalue} db Kingston Value termék van`);alert(`A kosarában ${Kingstonvalue} db Kingston Value termék van`);">-1</li>
+<li class="dropdown-item bg-danger" onclick="menyisegkingstonv();Kingstonvalue=Kingstonvalue-5;kingstonvar=kingstonvar-(5*15700); console.log(`A kosárban ${Kingstonvalue} db Kingston Value termék van`);alert(`A kosarában ${Kingstonvalue} db Kingston Value termék van`);">-5</li>
+<li class="dropdown-item bg-danger" onclick="menyisegkingstonv();Kingstonvalue=Kingstonvalue-Kingstonvalue;kingstonvar=0;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</li>
+            </ul>
+        </button>
+        <a href="ram1kepek.html" style="width:350px;" target="_blank">További képek</a>
+       <br>
+       <p style="background-color:tomato; color:whitesmoke;text-align:center;font-size:100%;">14990 Ft</p> 
+        </div>
+    
+    <div class="card col-sm-4 bg-danger" style="width:400px;">
+        <div class="card-header bg-primary text-light text-center text-md">
+            Új termék
+        </div>
+        <div class="card-body bg-secondary">
+            <img src="kepek/ram2.jpg" class="card-img-top" width="250" height="250">            
+        </div>
+        <div class="card-footer bg-warning">
+            <h1 class="card-title bg-success text-dark text-center text-lg">Kingston FURY Renegade 32GB (2x16GB) DDR5 6000MHz KF560C32RSK2-32</h1>
+        </div>
+        <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+        <ul class="dropdown-menu  bg-success">
+<li class="dropdown-item bg-danger" onclick="mennyisegkingstonr();Kingstonrenegade=Kingstonrenegade+1;kingstonrear=kingstonrear+(1*52600); console.log(`A kosárban ${Kingstonrenegade} db Kingston Renegade termék van`);alert(`A kosarában ${Kingstonrenegade} db Kingston Renegade termék van`);">Kosárba</li>
+<li class="dropdown-item bg-danger" onclick="mennyisegkingstonr();Kingstonrenegade=Kingstonrenegade+5;kingstonrear=kingstonrear+(5*52600); console.log(`A kosárban ${Kingstonrenegade} db Kingston Renegade termék van`);alert(`A kosarában ${Kingstonrenegade} db Kingston Renegade termék van`);">+5</li>
+<li class="dropdown-item bg-danger" onclick="mennyisegkingstonr();Kingstonrenegade=Kingstonrenegade-1;kingstonrear=kingstonrear-(1*52600); console.log(`A kosárban ${Kingstonrenegade} db Kingston Renegade termék van`);alert(`A kosarában ${Kingstonrenegade} db Kingston Renegade termék van`);">-1</li>
+<li class="dropdown-item bg-danger" onclick="mennyisegkingstonr();Kingstonrenegade=Kingstonrenegade-5;kingstonrear=kingstonrear-(5*52600); console.log(`A kosárban ${Kingstonrenegade} db Kingston Renegade termék van`);alert(`A kosarában ${Kingstonrenegade} db Kingston Renegade termék van`);">-5</li>
+<li class="dropdown-item bg-danger" onclick="mennyisegkingstonr();Kingstonrenegade=Kingstonrenegade-Kingstonrenegade;kingstonrear=0;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</li>
+        </ul>
+    </button>
+    <a href="ram2kepek.html" style="width:350px;" target="_blank">További képek</a>
+   <br>
+   <p style="background-color:tomato; color:whitesmoke;text-align:center;font-size:100%;">52590 Ft</p> 
+    </div>
+<div class="card col-sm-4  bg-dark" style="width:400px;">
+    <div class="card-header bg-success text-light text-center text-md">
+        Új termék
+    </div>
+    <div class="card-body bg-warning">
+        <img src="kepek/ram3.jpg" class="card-img-top" width="250" height="250">            
+    </div>
+    <div class="card-footer bg-danger">
+        <h1 class="card-title bg-success text-dark text-center text-lg">G.SKILL Aegis 16GB (2x8GB) DDR4 3200MHz F4-3200C16D-16GIS</h1>
+    </div>
+    <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+    <ul class="dropdown-menu  bg-success">
+<li class="dropdown-item bg-danger" onclick="mennyiseggskill();Gskill=Gskill+1;gskillar=gskillar+(1*15000); console.log(`A kosárban ${Gskill} db Gskill termék van`);alert(`A kosarában ${Gskill} db Gskill  termék van`);">Kosárba</li>
+<li class="dropdown-item bg-danger" onclick="mennyiseggskill();Gskill=Gskill+5;gskillar=gskillar+(5*15000); console.log(`A kosárban ${Gskill} db Gskill termék van`);alert(`A kosarában ${Gskill} db Gskill  termék van`);">+5</li>
+<li class="dropdown-item bg-danger" onclick="mennyiseggskill();Gskill=Gskill-1;gskillar=gskillar-(1*15000); console.log(`A kosárban ${Gskill} db Gskill termék van`);alert(`A kosarában ${Gskill} db Gskill  termék van`);">-1</li>
+<li class="dropdown-item bg-danger" onclick="mennyiseggskill();Gskill=Gskill-5;gskillar=gskillar-(5*15000); console.log(`A kosárban ${Gskill} db Gskill termék van`);alert(`A kosarában ${Gskill} db Gskill  termék van`);">-5</li>
+<li class="dropdown-item bg-danger" onclick="mennyiseggskill();Gskill=Gskill-Gskill;gskillar=0;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</li>
+    </ul>
+</button>
+<a href="ram3kepek.html" style="width:350px;" target="_blank">További képek</a>
+<br>
+<p style="background-color:tomato; color:whitesmoke;text-align:center;font-size:100%;">15690 Ft</p> 
+</div>
+    </ul>
+</button>
+
+</div>
+</div>
+<button type="button" onclick="console.log(`${Kingstonvalue} db Kingston Value , ${Kingstonrenegade} db Kingston Renegade , ${Gskill} db Gksill termék a jelenlegi összesítés`);alert(`${Kingstonvalue} db Kingston Value, ${Kingstonrenegade} db Kingston Renegade, ${Gskill} db Gskill termék a jelenlegi összesítés`);">A kosár összesítése</button>
+    <br>
+    <button type="button" class="fizetendo" onclick="fizetendo=kingstonvar+kingstonrear+gskillar;console.log(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);alert(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);">A jelenlegi fizetendő összeg megtekintése</button>
+    <script>
+    let Kingstonvalue=0;
+    let Kingstonrenegade=0;
+    let Gskill=0;
+    let kingstonvar=0
+    let kingstonrear=0;
+    let gskillar=0;
+    let fizetendo=0;
+    function mennyisegkingstonv(){
+if(Kingstonvalue<0 ){
+    Kingstonvalue=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Kingstonvalue>=20){
+    Kingstonvalue=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
+function mennyisegkingstonr(){
+if(Kingstonrenegade<0){
+    Kingstonrenegade=0;
+    alert('A termék mennyisége nme mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Kingstonrenegade>=20){
+    Kingstonrenegade=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function mennyiseggskill(){
+    if(Gskill<0){
+        Gskill=0;
+        alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+    }
+else if(Gskill>=20){
+    Gskill=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+    </script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+
+
 <html>
     <head>
         <title>Akciós termékek</title>
@@ -95,6 +97,23 @@ transition-duration:0.5s;
 cursor:pointer;
 transition-timing-function:ease-out;
 transform:rotateY(360deg);}
+a button{background-color:darkblue;
+color:gray;
+border:5px gray solid;
+padding:5px;
+margin:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:linear;}
+a button:hover{background-color:gray;
+color:darkblue;
+border:5px darkblue solid;
+padding:5px;
+margin:5px;
+transition-duration:0.5s;
+cursor:pointer;
+transition-timing-function:linear;
+transform:rotateX(360deg);}
 
             </style>
             </head>
@@ -106,22 +125,23 @@ transform:rotateY(360deg);}
                     </div>
                     <div class="card-title">
 
-                        <h1 class="bg-dark text-success text-sm">Razer DeathAdder Essential 2021 Gaming Egér, Fekete</h1>
+                        <h1 class="bg-dark text-success text-sm">ASUS TUF Gaming GeForce RTX 3060 Ti OC Edition 8GB GDDR6X (TUF-RTX3060TI-O8GD6X-GAMING) Videokártya</h1>
                     </div>
                     <div class="card-footer">
-                        <h1 class="card-text bg-danger text-primary"> <span style="text-decoration-line: line-through;">10990 Ft</span>               7990 Ft</h1>
+                        <h1 class="card-text bg-danger text-primary"> <span style="text-decoration-line: line-through;">259990 Ft</span>214990 Ft</h1>
 </div>
 <img src="kepek/akciostermek1 (1).jpg" class="card-img-center" width="250" height="250">
 <div class="x">
     <button type="button" class="lehetőségrazer" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
     <ul class="dropdown-menu bg-primary">
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer+1;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">Kosárba</button></li>
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer+5;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">+5</button></li>                            
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer-1;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">-1</button></li>        
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer-5;console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">-5</button></li>                            
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Razer=Razer-Razer;console.log(`A Razer kosár ürítve lett`);alert(`A Razer kosarát ürítettük`);">A kosár ürítése</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegRazer();Razer=Razer+1;Razerar=Razerar+(1*215000;)console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">Kosárba</button></li>
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegRazer();Razer=Razer+5;Razerar=Razerar+(5*215000;)console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">+5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegRazer();Razer=Razer-1;Razerar=Razerar-(1*215000;)console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">-1</button></li>        
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegRazer();Razer=Razer-5;Razerar=Razerar-(5*215000;)console.log(`A kosárban ${Razer} db Razer termék van`);alert(`A kosarában ${Razer} db Razer termék van`);">-5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegRazer();Razer=Razer-Razer;Razerar=0;console.log(`A Razer kosár ürítve lett`);alert(`A Razer kosarát ürítettük`);">A kosár ürítése</button></li>                            
    </ul>
 </div>
+<a href="akciostermek1kepek.html" target="_blank"><button type="button">Több kép</button></a>
 </div>
 <div class="card mb-2 bg-success text-end p-5 my-3" style="max-width:75rem;">
     <div class="card-header text-lg text-danger">
@@ -129,22 +149,23 @@ transform:rotateY(360deg);}
     </div>
     <div class="card-title">
 
-        <h1 class="bg-dark text-success text-sm">ASUS TUF Gaming GeForce RTX 3060 Ti OC Edition 8GB GDDR6X (TUF-RTX3060TI-O8GD6X-GAMING) Videokártya</h1>
+        <h1 class="bg-dark text-success text-sm"> Razer DeathAdder Essential 2021 Gaming Egér, Fekete</h1>
     </div>
     <div class="card-footer">
-        <h1 class="card-text bg-danger text-primary"> <span style="text-decoration-line: line-through;">259990 Ft</span>           214990 Ft</h1>
+        <h1 class="card-text bg-danger text-primary"> <span style="text-decoration-line: line-through;">10990 Ft</span>7990 Ft</h1>
 </div>
 <img src="kepek/akciostermek2.webp" class="card-img-center" width="250" height="250">
 <div class="y">
     <button type="button" class="lehetőségasus" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
     <ul class="dropdown-menu bg-primary">
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus+1;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">Kosárba</button></li>
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus+5;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">+5</button></li>                            
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus-1;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">-1</button></li>        
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus-5;console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">-5</button></li>                            
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Asus=Asus-Asus;console.log(`Az Asus kosár ürítve lett`);alert(`Az Asus kosarát ürítettük`);">A kosár ürítése</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegAsus();Asus=Asus+1;Asusar=Asusar+(1*8000);console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">Kosárba</button></li>
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegAsus();Asus=Asus+5;Asusar=Asusar+(5*8000);console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">+5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegAsus();Asus=Asus-1;Asusar=Asusar-(1*8000);console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">-1</button></li>        
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegAsus();Asus=Asus-5;Asusar=Asusar-(5*8000);console.log(`A kosárban ${Asus} db Asus termék van`);alert(`A kosarában ${Asus} db Asus termék van`);">-5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegAsus();Asus=Asus-Asus;Asusar=0;console.log(`Az Asus kosár ürítve lett`);alert(`Az Asus kosarát ürítettük`);">A kosár ürítése</button></li>                            
    </ul>
 </div>
+<a href="akciostermek2kepek.html" target="_blank"><button type="button">Több kép</button></a>
 </div>
 </div>
 <div class="card  mb-2 bg-primary text-center p-5 my-3" style="max-width:75rem;">
@@ -156,27 +177,65 @@ transform:rotateY(360deg);}
         <h1 class="bg-dark text-success text-sm">Samsung Odyssey G3 S24AG30ANU Monitor</h1>
     </div>
     <div class="card-footer">
-        <h1 class="card-text bg-danger text-primary"> <span style="text-decoration-line: line-through;">71990 Ft</span>           55990Ft</h1>
+        <h1 class="card-text bg-danger text-primary"> <span style="text-decoration-line: line-through;">71990 Ft</span>55990Ft</h1>
 </div>
 <img src="kepek/akciostermek3.jpg" class="card-img-center" width="250" height="250">
 <div class="z">
     <button type="button" class="lehetőségsamsung" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
     <ul class="dropdown-menu bg-primary">
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung+1;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">+1</button></li>
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung+5;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">+5</button></li>                            
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung-1;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">-1</button></li>        
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung-5;console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">-5</button></li>                            
-<li class="dropdown-item bg-danger text-success"><button type="button" onclick="Samsung=Samsung-Samsung;console.log(`A Samsung kosár ürítve lett`);alert(`A Samsung kosarát ürítettük`);">A kosár ürítése</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegSamsung();Samsung=Samsung+1;Samsungar=Samsungar+(1*56000);console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">+1</button></li>
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegSamsung();Samsung=Samsung+5;Samsungar=Samsungar+(5*56000);console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">+5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegSamsung();Samsung=Samsung-1;Samsungar=Samsungar-(1*56000);console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">-1</button></li>        
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegSamsung();Samsung=Samsung-5;Samsungar=Samsungar-(5*56000);console.log(`A kosárban ${Samsung} db Samsung termék van`);alert(`A kosarában ${Samsung} db Samsung termék van`);">-5</button></li>                            
+<li class="dropdown-item bg-danger text-success"><button type="button" onclick="mennyisegSamsung();Samsung=Samsung-Samsung;Samsungar=0;console.log(`A Samsung kosár ürítve lett`);alert(`A Samsung kosarát ürítettük`);">A kosár ürítése</button></li>                            
    </ul>
 </div>
+<a href="akciostermek3kepek.html" target="_blank"><button type="button">Több kép</button></a>
 </div>
 </div>
 </div>
 <button type="button" class="összesítés" onclick="console.log(`A kosárban ${Razer} db Razer, + ${Asus} db Asus, + ${Samsung} db Samsung termék van, eddig`);alert(`A kosarában ${Razer} db Razer, ${Asus} db Asus, ${Samsung} db Samsung termék van, eddig`);">Összesítés</button>
+<br>
+<button type="button" class="fizetendo" onclick="fizetendo=Razerar+Asusar+Samsungar;console.log(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);alert(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);">A jelenlegi fizetendő összeg megtekintése</button>
+
 <script>
     let Razer=0;
     let Asus=0;
     let Samsung=0;
+let Razerar=0;
+let Asusar=0;
+let Samsungar=0;
+let fizetendo=0;
+function mennyisegRazer(){
+if(Razer<0 ){
+    Razer=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Razer>=20){
+    Razer=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
+function mennyisegAsus(){
+if(Asus<0){
+    Asus=0;
+    alert('A termék mennyisége nme mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Asus>=20){
+    Asus=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function mennyisegSamsung(){
+    if(Samsung<0){
+        Samsung=0;
+        alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+    }
+else if(Samsung>=20){    
+    Samsung=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
 </script>
             </body>
             </html>

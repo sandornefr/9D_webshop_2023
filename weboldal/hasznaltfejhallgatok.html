@@ -1,4 +1,5 @@
 
+
 <html>
 <head>
     <title>Használt fejhallgatók</title>
@@ -69,11 +70,11 @@ justify-content:center;}
         <p>2990 Ft</p>
         <button type="button" class="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
         <ul class="dropdown-menu">
-   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras+1;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">+1</button></li>
-   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras+5;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras-1;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras-5;console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">-5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="Dyras=Dyras-Dyras;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="mennyisegDyras();Dyras=Dyras+1;Dyrasar=Dyrasar+(1*3000)console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">+1</button></li>
+   <li class="dropdown-item"><button type="button" onclick="mennyisegDyras();Dyras=Dyras+5;Dyrasar=Dyrasar+(5*3000)console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="mennyisegDyras();Dyras=Dyras-1;Dyrasar=Dyrasar-(1*3000)console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="mennyisegDyras();Dyras=Dyras-5;Dyrasar=Dyrasar-(5*3000)console.log(`A kosárban ${Dyras} db Dyras termék van`);alert(`A kosarában ${Dyras} db Dyras termék van`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="mennyisegDyras();Dyras=Dyras-Dyras;Dyrasar=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
     </div>
         </div>
@@ -99,11 +100,11 @@ justify-content:center;}
     <p>6990 Ft</p>
     <button type="button" class="Akg" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu">
-       <li class="dropdown-item"><button type="button" onclick="Akg=Akg+1;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">+1</button></li>
-       <li class="dropdown-item"><button type="button" onclick="Akg=Akg+5;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">+5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Akg=Akg-1;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">-1</button></li>        
-       <li class="dropdown-item"><button type="button" onclick="Akg=Akg-5;console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">-5</button></li>                            
-       <li class="dropdown-item"><button type="button" onclick="Akg=Akg-Akg;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="mennyisegAkg();Akg=Akg+1;Akgar=Akgar+(1*7000);console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">+1</button></li>
+       <li class="dropdown-item"><button type="button" onclick="mennyisegAkg();Akg=Akg+5;Akgar=Akgar+(5*7000);console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">+5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="mennyisegAkg();Akg=Akg-1;Akgar=Akgar-(1*7000);console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">-1</button></li>        
+       <li class="dropdown-item"><button type="button" onclick="mennyisegAkg();Akg=Akg-5;Akgar=Akgar-(5*7000);console.log(`A kosárban ${Akh} db Akg termék van`);alert(`A kosarában ${Akg} db Akg termék van`);">-5</button></li>                            
+       <li class="dropdown-item"><button type="button" onclick="mennyisegAkg();Akg=Akg-Akg;Akgar=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
 </div>
     </div>
@@ -127,21 +128,58 @@ justify-content:center;}
     <p>13990 Ft</p>
     <button type="button" class="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
     <ul class="dropdown-menu">
-<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle+1;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">+1</button></li>
-<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle+5;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">+5</button></li>                            
-<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle-1;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">-1</button></li>        
-<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle-5;console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">-5</button></li>                            
-<li class="dropdown-item"><button type="button" onclick="Turtle=Turtle-Turtle;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+<li class="dropdown-item"><button type="button" onclick="mennyisegTurtle();Turtle=Turtle+1;Turtlear=Turtlear+(1*14000);console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">+1</button></li>
+<li class="dropdown-item"><button type="button" onclick="mennyisegTurtle();Turtle=Turtle+5;Turtlear=Turtlear+(5*14000);console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">+5</button></li>                            
+<li class="dropdown-item"><button type="button" onclick="mennyisegTurtle();Turtle=Turtle-1;Turtlear=Turtlear-(1*14000);console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">-1</button></li>        
+<li class="dropdown-item"><button type="button" onclick="mennyisegTurtle();Turtle=Turtle-5;Turtlear=Turtlear-(5*14000);console.log(`A kosárban ${Turtle} db Turtle termék van`);alert(`A kosarában ${Turtle} db Turtle termék van`);">-5</button></li>                            
+<li class="dropdown-item"><button type="button" onclick="mennyisegTurtle();Turtle=Turtle-Turtle;Turtlear=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
    </ul>
 </div>
     </div>
 </div>
     </div>
     <button type="button" class="button" onclick="console.log(`A kosárban ${Dyras} db Dyras, ${Akg} db Akg,  ${Turtle} db Turtle termék van jelenleg az összesítésben `);alert(`A kosarában ${Dyras} db Dyras, ${Akg} db Akg, ${Turtle} db Turtle termék van jelenleg az összesítésben`);">Összesítés</button>
+    <br>
+    <button type="button" class="fizetendo" onclick="fizetendo=Dyrasar+Akgar+Turtlear;console.log(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);alert(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);">A jelenlegi fizetendő összeg megtekintése</button>
+
     <script>
 let Dyras=0;
 let Akg=0;
 let Turtle=0;
+let Dyrasar=0;
+let Akgar=0;
+let Turtlear=0;
+let fizetendo=0;
+function mennyisegDyras(){
+if(Dyras<0 ){
+    Dyras=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Dyras>=20){
+    Dyras=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
+function mennyisegAkg(){
+if(Akg<0){
+    Akg=0;
+    alert('A termék mennyisége nme mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(Akg>=20){
+    Akg=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function mennyisegTurtle(){
+    if(Turtle<0){
+        Turtle=0;
+        alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+    }
+else if(Turtle>=20){    
+    Turtle=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
         </script>
 </body>
 </html>

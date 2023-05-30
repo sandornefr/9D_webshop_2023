@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -6,9 +7,9 @@
         .nelegyenszéles{max-width:25%;}
         button{background-color:black;
         color:yellow;
-    width:50%;
-height:10%;
-border:10px yellow solid;
+    width:auto;
+height:auto;
+border:5px yellow solid;
 margin:5px;
 padding:5px;
 transition-timing-function:linear;
@@ -18,11 +19,11 @@ font-size:75%;
 }
 button:hover{background-color:yellow;
 color:black;
-width:45%;
-height:7.5%;
+width:auto;
+height:auto;
 margin:5px;
 padding:5px;
-border:10px black solid;
+border:5px black solid;
 transition-timing-function:linear;
 transition-duration:0.5s;
 cursor:pointer;
@@ -50,12 +51,13 @@ font-size:50%;}
 <div class="card-footer g-3 bg-dark">
     <div class="nelegyenszéles">
         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+        <h1 style="background-color:black; color:white">393000 Ft</h1>
         <ul class="dropdown-menu bg-danger text-lg text-center text-success">
-   <li class="dropdown-item"><button type="button" onclick="hd=hd+1;console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">Kosárba</button></li>
-   <li class="dropdown-item"><button type="button" onclick="hd=hd+5;console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="hd=hd-1;console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="hd=hd-5;console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">-5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="hd=hd-hd;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemhd();hd=hd+1;hdar=hdar+(393000*1);console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">Kosárba</button></li>
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemhd();hd=hd+5;hdar=hdar+(393000*5);console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemhd();hd=hd-1;hdar=hdar-(393000*1);console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemhd();hd=hd-5;hdar=hdar-(393000*5);console.log(`A kosárban${hd} db HP termék van`);alert(`A kosarában ${hd} db HP termék van`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemhd();hd=hd-hd;hdar=0;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
     </div>
 </div>
@@ -74,12 +76,13 @@ font-size:50%;}
 <div class="card-footer g-3 bg-dark">
     <div class="nelegyenszéles">
         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+        <h1 style="background-color:black; color:white">30000 Ft</h1>
         <ul class="dropdown-menu bg-danger text-lg text-center text-success">
-   <li class="dropdown-item"><button type="button" onclick="kingston=kingston+1;console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">Kosárba</button></li>
-   <li class="dropdown-item"><button type="button" onclick="kingston=kingston+5;console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="kingston=kingston-1;console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="kingston=kingston-5;console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">-5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="kingston=kingston-kingston;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemkingston();kingston=kingston+1;kingstonar=kingstonar+(1*30000);console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">Kosárba</button></li>
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemkingston();kingston=kingston+5;kingstonar=kingstonar+(5*30000);console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemkingston();kingston=kingston-1;kingstonar=kingstonar-(1*30000);console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemkingston();kingston=kingston-5;kingstonar=kingstonar-(5*30000);console.log(`A kosárban${kingston} db Kingston termék van`);alert(`A kosarában ${kingston} db Kingston termék van`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemkingston();kingston=kingston-kingston;kingstonar=0;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
     </div>
 </div>
@@ -98,21 +101,59 @@ font-size:50%;}
 <div class="card-footer g-3 bg-dark">
     <div class="nelegyenszéles">
         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
+        <h1 style="background-color:black; color:white">25000 Ft</h1>
         <ul class="dropdown-menu bg-danger text-lg text-center text-success">
-   <li class="dropdown-item"><button type="button" onclick="nemtudom=nemtudom+1;console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">Kosárba</button></li>
-   <li class="dropdown-item"><button type="button" onclick="nemtudom=nemtudom+5;console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">+5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="nemtudom=nemtudom-1;console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">-1</button></li>        
-   <li class="dropdown-item"><button type="button" onclick="nemtudom=nemtudom-5;console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">-5</button></li>                            
-   <li class="dropdown-item"><button type="button" onclick="nemtudom=nemtudom-nemtudom;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemnemtudom();nemtudom=nemtudom+1;nemtudomar=nemtudomar+(25000*1);console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">Kosárba</button></li>
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemnemtudom();nemtudom=nemtudom+5;nemtudomar=nemtudomar+(25000*5);console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">+5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemnemtudom();nemtudom=nemtudom-1;nemtudomar=nemtudomar-(25000*1);console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">-1</button></li>        
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemnemtudom();nemtudom=nemtudom-5;nemtudomar=nemtudomar-(25000*5);console.log(`A kosárban${nemtudom} db Kingston termék van`);alert(`A kosarában ${nemtudom} db Kingston termék van`);">-5</button></li>                            
+   <li class="dropdown-item"><button type="button" onclick="minuszbanemsokbanemnemtudom();nemtudom=nemtudo-nemtudom;nemtudomar=0;;nemtudomar=0;console.log(`A kosár ürítve lett`);alert(`A kosarát ürítettük`);">A kosár ürítése</button></li>                            
        </ul>
     </div>
 </div>
 </div>
       <button type="button" class="összesítés" onclick="console.log(`${hd} Hd +${kingston} Kingston +${nemtudom} Kingston db termék a jelenlegi összesítés`);alert(`${hd} hd +${kingston} Kingston+${nemtudom} Kingston db termék a jelenlegi összesítés`);">Összesítés</button>
+    <br>
+    <button type="button" class="összesítés" onclick="fizetendo=hdar+kingsotnar+nemtudmar;console.log(`A jelelnlegi ára a rendelésnek:${fizetendo} ft );">A kosár jelenlegi árának megtekintése</button>
     <script>
         let hd=0;
         let kingston=0;
         let nemtudom=0;
+        let hdar=0;
+        let kingstonar=0;
+        let nemtudomar=0;
+        let fizetendo=0;
+        function minuszbanemsokbanemhd(){
+if(hd<0){
+    hd=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(hd>=20){
+    hd=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
+function minuszbanemsokbanemkingston(){
+if(kingston<0){
+kingston=0;
+    alert('A termék mennyisége nme mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(kingston>=20){
+    kingston=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function minuszbanemsokbanemnemtudom(){
+    if(nemtudom<0){
+        nemtudom=0;
+        alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+    }
+else if(nemtudom>=20){
+    nemtudom=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+
     </script>
 </body>
 </html>
