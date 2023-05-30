@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <title>Hama egérpad</title>
@@ -7,17 +8,17 @@
 .gomb{background-color:black;
 color:red;
 border:5px red solid;
-width: 100px;
-height:100px;
+width: auto;
+height:auto;
 padding:5px;
 animation: animáció infinite 4s;
 cursor:pointer;}
 @keyframes animáció{
     0%{color:red;border:5px red inset;}
-    25%{color:yellow; border:10px yellow outset;}
+    25%{color:yellow; border:5px yellow outset;}
     50%{color:blue; border:5px blue inset;}
     75%{color:green; border:5px green outset;}
-    100%{color:red; border:10px red inset;}
+    100%{color:red; border:5px red inset;}
 }
             </style>
             </head>
@@ -35,14 +36,27 @@ cursor:pointer;}
 </h1>
 <button type="button" class="gomb" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu bg-success">
-       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+1</button></li>
-       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+5</button></li>                            
-       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-1</button></li>        
-       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-5</button></li>                            
-       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek+1;egerpadar=egerpadar+(1020*1);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+1</button></li>
+       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek+5;egerpadar=egerpadar+(1020*5);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-1;egerpadar=egerpadar+(1020*1);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-5;egerpadar=egerpadar+(1020*5);console.log(`A kosárban ${kosarertek} db termék van`);alert(`A kosarában ${kosarertek} db termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-warning text-dark"><button type="button" onclick="kosarertek=kosarertek-kosarertek;egerpadar=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
+           <br>
+           <button type="button" class="gomb" onclick="console.log(`A kosár jelenlegi értéke ${egerpadar} Ft`);alert(`A kosár jelenlegi értéke ${egerpadar} Ft`);">A kosár tartalmának az árának a megtekintése</button>
            <script>
             let kosarertek=0;
+            let egerpadar=0;
+            function mennyiseg(){
+if(kosarertek<0){
+    kosarertek=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(kosarertek>=20){
+    kosarertek=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
             </script>
             </body>
             </html>

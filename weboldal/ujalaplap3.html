@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <title>ASRock X570D4U-2L2T/BCM alaplap</title>
@@ -24,7 +25,7 @@ button:hover{
     </head>
     <body>
         <div class="card bg-dark">
-            <img src="kepek/ujalaplap2.jpg" width="250" height="250">
+            <img src="kepek/ujalaplap3.jpg" width="250" height="250">
             <div class="card-head text-light text-large">ASRock X570D4U-2L2T/BCM</div>
             <div class="card-body">
                 <h1 class="card-text text-light bg-primary text-sm">
@@ -32,18 +33,31 @@ button:hover{
                 </h1>
                 <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu bg-secondary">
-       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="kosarertek=kosarertek+1;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+1</button></li>
-       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="kosarertek=kosarertek+5;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+5</button></li>                            
-       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="kosarertek=kosarertek-1;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-1</button></li>        
-       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="kosarertek=kosarertek-5;console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-5</button></li>                            
-       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="kosarertek=kosarertek-kosarertek;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek+1;alaplapar=alaplapar+(1*150000);console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+1</button></li>
+       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek+5;alaplapar=alaplapar+(5*150000);console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-1;alaplapar=alaplapar-(1*150000);console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-5;alaplapar=alaplapar-(5*150000);console.log(`A kosárban${kosarertek} db termék van`);alert(`A kosarában${kosarertek} db termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-success text-dark"><button type="button" onclick="mennyiseg();kosarertek=kosarertek-kosarertek;alaplapar=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
+           <br>
+           <button type="button" class="gomb" onclick="console.log(`A kosár jelenlegi értéke ${alaplapar} Ft`);alert(`A kosár jelenlegi értéke ${alaplapar} Ft`);">A kosár tartalmának az árának a megtekintése</button>
+
             </div>
         </div>
 
         <script>
             let kosarertek=0;
-
+            let alaplapar=0;
+            function mennyiseg(){
+if(kosarertek<0){
+    kosarertek=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(kosarertek>=20){
+    kosarertek=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
             </script>
     </body>
 </html>

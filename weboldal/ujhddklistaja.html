@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,11 +50,11 @@ button:hover{
                 <img src="kepek/kekhdd.jpg" width="192" height="250">
                 <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu bg-dark">
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue+1;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">+1</button></li>
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue+5;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">+5</button></li>                            
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue-1;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">-1</button></li>        
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue-5;console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">-5</button></li>                            
-       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="blue=blue-blue;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyisegblue();blue=blue+1;bluear=bluear+(1*20000);console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">+1</button></li>
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyisegblue();blue=blue+5;bluear=bluear+(5*20000);console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyisegblue();blue=blue-1;bluear=bluear-(1*20000);console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyisegblue();blue=blue-5;bluear=bluear-(5*20000);console.log(`A kosárban ${blue} db Western Digital WD blue termék van`);alert(`A kosarában ${blue} db Western Digital WD blue termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-primary text-light"><button type="button" onclick="mennyisegblue();blue=blue-blue;bluear=0; console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
         </div>
         </div>
@@ -76,11 +77,11 @@ button:hover{
                 <img src="kepek/lilahdd.jpg" width="192" height="250">
                 <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
                 <ul class="dropdown-menu bg-dark">
-           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple+1;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">+1</button></li>
-           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple+5;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">+5</button></li>                            
-           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple-1;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">-1</button></li>        
-           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple-5;console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">-5</button></li>                            
-           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="purple=purple-purple;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="mennyisegpurple()purple=purple+1;purplear=purplear+(1*110000);console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">+1</button></li>
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="mennyisegpurple()purple=purple+5;purplear=purplear+(5*110000);console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">+5</button></li>                            
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="mennyisegpurple()purple=purple-1;purplear=purplear-(1*110000);console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">-1</button></li>        
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="mennyisegpurple()purple=purple-5;purplear=purplear-(5*110000);console.log(`A kosárban ${purple} db Western Digital WD purple termék van`);alert(`A kosarában ${purple} db Western Digital WD purple termék van`);">-5</button></li>                            
+           <li class="dropdown-item bg-dark text-light"><button type="button" onclick="mennyisegpurple()purple=purple-purple;purplear=purplear;.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
                </ul>
                 </div>
                 
@@ -102,19 +103,55 @@ button:hover{
                         <img src="kepek/piroshdd.jpg" width="192" height="250">
                         <button type="button" data-bs-toggle="dropdown">Vásárlási lehetőségek</button>
             <ul class="dropdown-menu bg-dark">
-       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red+1;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">+1</button></li>
-       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red+5;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">+5</button></li>                            
-       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red-1;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">-1</button></li>        
-       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red-5;console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">-5</button></li>                            
-       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="red=red-red;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="mennyisegred();red=red+1;redar=redar+(1*70000);console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">+1</button></li>
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="mennyisegred();red=red+5;redar=redar+(5*70000);console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">+5</button></li>                            
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="mennyisegred();red=red-1;redar=redar-(1*70000);console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">-1</button></li>        
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="mennyisegred();red=red-5;redar=redar-(5*70000);console.log(`A kosárban ${red} db Western Digital WD Red termék van`);alert(`A kosarában ${red} db Western Digital WD Red termék van`);">-5</button></li>                            
+       <li class="dropdown-item bg-danger text-light"><button type="button" onclick="mennyisegred();red=red-red;redar=0;console.log(`A kosár ürítve lett`);alert(` A kosarát ürítettük`);">A kosár ürítése</button></li>                            
            </ul>
         </div>
         </div>
         <button type="button" onclick="console.log(`${blue} db Western Digital Wdd blue + ${purple} db Western Digital Wdd purple+ ${red} db Western Digital WD red termék a jelenlegi összesítés`); alert(`${blue} db Western Digital WD blue + ${purple} db Western Digital WD purple + ${red} db Western Digital WD red termék a jelenlegi összesítés`);">A kosár összesítése</button>
-        <script>
+<br>
+<button type="button" class="fizetendo" onclick="fizetendo=bluear+purplear+redar;console.log(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);alert(`A jelenlegi ára a rendelésnek: ${fizetendo} ft`);">A jelenlegi fizetendő összeg megtekintése</button>
+<script>
 let blue=0;
 let purple=0;
 let red=0;
+let bluear=0;
+let purplear=0;
+let redar=0;
+let fizetendo=0;
+function mennyisegblue(){
+if(blue<0 ){
+    blue=0;
+    alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(blue>=20){
+    blue=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+    }
+function mennyisegpurple(){
+if(purple<0){
+    purple=0;
+    alert('A termék mennyisége nme mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+}
+else if(purple>=20){
+    purple=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
+function mennyisegred(){
+    if(red<0){
+        red=0;
+        alert('A termék mennyisége nem mehet minuszba, jelenleg ebből a termékből a kosarában 0 db van');
+    }
+else if(red>=20){    
+    red=0;
+    alert('Sajnos ennyi termék nincsen raktáron jelenleg, kérjük vásároljon kevesebb mennyiséget, a kosarát nulláztuk, köszönjük megértését!');
+}
+}
             </script>
 </body>
 </html>
