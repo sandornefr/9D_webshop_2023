@@ -1,10 +1,9 @@
 
-
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
   <title>Főoldal</title>
+  <link rel="icon" type="image/x-icon" href="kepek/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
@@ -20,6 +19,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
     }
+    .logo{float:left;}
     .részletek{text-align:left;}
     nav{
 flex:1;
@@ -96,6 +96,23 @@ text-align:center;
       border:5px white solid;
    
     }
+     input{
+      margin-top:20px;
+      width: 25%;
+      height:20%;
+       position:absolute;
+      border-radius:25%;
+      left:37.5%;
+      border:5px red solid;
+      animation:villogas 4s infinite alternate-reverse;
+    }
+    @keyframes villogas{
+0%{border:5px red solid;}
+25%{border:5px blue solid;}
+50%{border:5px yellow solid;}
+75%{border:5px green solid;}
+100%{border:5px yellow solid;}
+    }
     .cím h1{
 color:white;
 font-size:70px;
@@ -166,7 +183,7 @@ color:white;
 font-weight:250;
     }
     .kozep.row.col p:hover{
-      color:crimson;
+      color:yellow;
       transition-duration:0.5s;
       transition-timing-function:linear;
     }
@@ -194,11 +211,14 @@ margin-top:10px;}
       text-align:center;
       color:gray;
     }
+    .terkoz{
+      margin-top:15px;
+    }
   </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>9.D webshop</title>
 </head>
 <body>
   <div class="felsoresz">
@@ -229,6 +249,9 @@ margin-top:10px;}
     <li><a class="dropdown-item bg-success text-lg text-light text-center border-inline" href="mikrofonok.html" target="_blank">Mikrofonok</a></li>
     <li><a class="dropdown-item bg-warning text-lg text-light text-center border-inline" href="fejhallgatok.html" target="_blank">Új fejhallgatók</a></li>
     <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline" href="hasznaltfejhallgatok.html" target="_blank">Használt fejhallgatók</a></li>
+    <li><a class="dropdown-item bg-light text-dark text-lg text-center border-inline" href="kormanyok.html" target="_blank">Kormányok</a></li>
+    <li><a class="dropdown-item bg-success text-lg text-light text-center border-inline" href="vrok.html" target="_blank">Vrok</a></li>
+    <li><a class="dropdown-item bg-secondary text-lg text-light text-center border-inline" href="nyomtatok.html" target="_blank">Nyomtatók</a></li>
     <li><a class="dropdown-item bg-danger text-lg text-light text-center border-inline" href="szamitogepeklistaja.html" target="_blank">Számítógépek</a></li>
     <li><a class="dropdown-item bg-dark text-lg text-light text-center border-inline"  href="ujalaplapoklistaja.html" target="_blank">Alaplapok </a></li>
     <li><a class="dropdown-item bg-primary text-lg text-light text-center border-inline"  href="ujgephazaklistaja.html" target="_blank">Gépházak</a> </li>
@@ -281,7 +304,7 @@ margin-top:10px;}
   
   </li>  
 
-  
+  <div class="logo"><img src="kepek/favicon.png" width="100" height="100"></div>
     <nav>
               <ul>
                 
@@ -289,7 +312,7 @@ margin-top:10px;}
 <li><a href="regisztraciosfelulet2.html" target="_blank">Regisztráció</a></li>
 <li><a href="bejelentkezes.html" target="_blank">Bejelentkezés</a></li>
 <li><a href="termekek.html" target="_blank">Termékek</a></li>
-<li><a href="informaciok.html" target="_blank">Információ</a></li>
+<li><a href="információkuj.html" target="_blank">Információ</a></li>
       </ul>
       </div>
     </nav>
@@ -306,8 +329,12 @@ margin-top:10px;}
   <div class="cím">
     <h1>9.D Webshop</h1>
     <p>Vásárlás nálunk</p>
-    <a href="osszestermek.html" target="_blank"><button type="button">Az összes termék megtekintése</button></a>
-</div>
+    
+    <br>
+    <a href="osszestermek.html" id="terkoz" target="_blank"><button type="button">Az összes termék megtekintése</button></a>
+<br>
+<input type="text" required placeholder="Írja be mit keres" autocomplete="on">
+  </div>
   </div>
   <div class="kozep">
     <div class="row">
